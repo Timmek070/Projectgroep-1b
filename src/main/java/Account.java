@@ -1,18 +1,15 @@
-import java.util.Date;
+import java.util.ArrayList;
 
-public class Account {
+public abstract class Account {
+
     private String Name;
     private String Sex;
-    private Date Dateofbirth;
-    private String Type;
-    private String Proffession;
+    private String Dateofbirth;
 
-    public Account(String Name, String Sex, Date Dateofbirth, String Type, String Proffession){
+    public Account(String Name, String Sex, String Dateofbirth){
         this.Name = Name;
         this.Sex = Sex;
         this.Dateofbirth = Dateofbirth;
-        this.Type = Type;
-        this.Proffession = Proffession;
     }
 
     public String getName(){
@@ -23,28 +20,27 @@ public class Account {
         return this.Sex;
     }
 
-    public Date getDateofbirth(){
+    public String getDateofbirth(){
         return this.Dateofbirth;
-    }
-
-    public String getType(){
-        return this.Type;
-    }
-
-    public String getProffession(){
-        return this.Proffession;
     }
 }
 
 class User extends Account{
 
-    public User(String Name, String Sex, Date Dateofbirth, String Type, String Proffession) {
-        super(Name, Sex, Dateofbirth, Type, Proffession);
-    }
-
     private String Username;
     private String Password;
     private String Email;
+    private String Type;
+    private ArrayList<String> Proffession;
+
+    public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type, ArrayList<String> Proffession) {
+        super(Name, Sex, Dateofbirth);
+        this.Username = Username;
+        this.Password = Password;
+        this.Email = Email;
+        this.Type = Type;
+        this.Proffession = Proffession;
+    }
 
     public String getUsername(){
         return this.Username;
@@ -57,11 +53,32 @@ class User extends Account{
     public String getEmail(){
         return this.Email;
     }
+
+    public String getType(){
+        return this.Type;
+    }
+
+    public ArrayList<String> getProffession(){
+        return this.Proffession;
+    }
+
+    public String getRank() {
+        if(this.getProffession().size() >= 6) {
+            return "Gold";
+        }
+        if(this.getProffession().size() >= 4) {
+            return "Silver";
+        }
+        if(this.getProffession().size() >= 2) {
+            return "Bronze";
+        }
+        return "No badge";
+    }
 }
 
 class Child extends Account{
 
-    public Child(String Name, String Sex, Date Dateofbirth, String Type, String Proffession) {
-        super(Name, Sex, Dateofbirth, Type, Proffession);
+    public Child(String Name, String Sex, String Dateofbirth) {
+        super(Name, Sex, Dateofbirth);
     }
 }
