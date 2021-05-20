@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class login {
 
-    private static login Singleton;
+    private static login singleton;
     private ArrayList<Account> accounts;
     private Boolean isLoggedIn = false;
 
@@ -12,7 +12,11 @@ public class login {
     }
 
     public static login getInstance() {
-        return Singleton;
+        if (singleton == null) {
+            singleton = new login();
+        }
+
+        return singleton;
     }
 
     private void startLogin(String username, String password) {
