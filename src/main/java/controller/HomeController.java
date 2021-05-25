@@ -16,5 +16,9 @@ public class HomeController {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
         rootPane.getChildren().setAll(pane);
     }
+    public void shop(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ShopScreen.fxml"));
+        rootPane.getChildren().setAll(pane);
+    }
 
 }
