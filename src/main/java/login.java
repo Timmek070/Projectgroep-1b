@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class login {
 
     private static login singleton;
-    private ArrayList<Account> accounts;
+    private ArrayList<User> accounts;
     private Boolean isLoggedIn = false;
 
 
     private login() {
-        Account accounts = new ArrayList<Account>();
+        accounts = new ArrayList<User>();
     }
 
     public static login getInstance() {
