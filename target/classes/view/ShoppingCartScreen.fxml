@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+        <Label layoutX="23.0" layoutY="42.0" text="Welcome to the Kumbaya ZeroXess Shopping Cart" textFill="#004a80">
+            <font>
+                <Font name="Cooper Black" size="27.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="37.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="42.0" prefWidth="141.0" text="Back to shop">
+            <font>
+                <Font name="Corbel" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="receiptButton" layoutX="37.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="42.0" prefWidth="141.0" text="Print Receipt">
+            <font>
+                <Font name="Corbel" size="15.0" />
+            </font>
+        </Button>
+        <Text layoutX="82.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Closing Africa's connectivity gap to power social and economic progress&quot; ">
+            <font>
+                <Font name="Corbel Light" size="14.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
