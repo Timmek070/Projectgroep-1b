@@ -19,6 +19,11 @@
             <Font name="Corbel" size="15.0" />
          </font>
       </Button>
+      <Button fx:id="Shopping" layoutX="40.0" layoutY="325.0" mnemonicParsing="false" onMouseClicked="#toShop" prefHeight="42.0" prefWidth="141.0" text="Shopping Cart">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
       <Text layoutX="82.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Closing Africa's connectivity gap to power social and economic progress&quot; ">
          <font>
             <Font name="Corbel Light" size="14.0" />

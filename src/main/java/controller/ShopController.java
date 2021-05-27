@@ -17,4 +17,8 @@ public class ShopController {
         rootPane.getChildren().setAll(pane);
     }
 
+    public void toShop(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ShoppingCartScreen.fxml"));
+        rootPane.getChildren().setAll(pane);
+    }
 }
