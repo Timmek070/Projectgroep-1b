@@ -1,8 +1,11 @@
+import java.math.BigDecimal;
+
 public class Product {
 
     private String name;
     private String category;
     private String description;
+    private BigDecimal price;
 
     public Product(String name, String category){
         this.name = name;
