@@ -31,7 +31,7 @@ class User extends Account{
     private String Password;
     private String Email;
     private String Type;
-    private ArrayList<String> Proffession;
+    private ArrayList<String> Profession;
 
     public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type, ArrayList<String> Proffession) {
         super(Name, Sex, Dateofbirth);
@@ -39,7 +39,7 @@ class User extends Account{
         this.Password = Password;
         this.Email = Email;
         this.Type = Type;
-        this.Proffession = Proffession;
+        this.Profession = Proffession;
     }
 
     public String getUsername(){
@@ -58,18 +58,18 @@ class User extends Account{
         return this.Type;
     }
 
-    public ArrayList<String> getProffession(){
-        return this.Proffession;
+    public ArrayList<String> getProfession(){
+        return this.Profession;
     }
 
     public String getRank() {
-        if(this.getProffession().size() >= 6) {
+        if(this.getProfession().size() >= 6) {
             return "Gold";
         }
-        if(this.getProffession().size() >= 4) {
+        if(this.getProfession().size() >= 4) {
             return "Silver";
         }
-        if(this.getProffession().size() >= 2) {
+        if(this.getProfession().size() >= 2) {
             return "Bronze";
         }
         return "No badge";

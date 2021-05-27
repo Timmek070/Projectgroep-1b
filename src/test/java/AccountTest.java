@@ -20,7 +20,7 @@ class AccountTest {
         assertEquals("3-4-2001", u1.getDateofbirth());
         assertEquals("Admin", u1.getType());
         pl1.add("Software Engineer");
-        assertEquals("Software Engineer", u1.getProffession().get(0));
+        assertEquals("Software Engineer", u1.getProfession().get(0));
     }
 
     @Test
