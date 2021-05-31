@@ -17,11 +17,6 @@ public class LoginController implements Initializable {
     @FXML
     private AnchorPane rootPane;
 
-    public void login(MouseEvent mouseEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
-        rootPane.getChildren().setAll(pane);
-    }
-
     public void back(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/WelcomeScreen.fxml"));
         rootPane.getChildren().setAll(pane);

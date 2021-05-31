@@ -12,9 +12,12 @@ public class WelcomeController {
     @FXML
     private AnchorPane rootPane;
 
-    public void back(MouseEvent mouseEvent) throws IOException {
+    public void register(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/RegisterScreen.fxml"));
+        rootPane.getChildren().setAll(pane);
+    }
+    public void login(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
         rootPane.getChildren().setAll(pane);
     }
-
 }
