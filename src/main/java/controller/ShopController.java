@@ -17,7 +17,7 @@ public class ShopController {
     @FXML
     private AnchorPane rootPane;
 
-    public static void main(String args[]){
+    public static void main(String args[]) {
         start();
     }
 
@@ -31,7 +31,7 @@ public class ShopController {
         rootPane.getChildren().setAll(pane);
     }
 
-    public void start() {
+    public static void start() {
         //Creating a Text object
         Text text = new Text();
         //Setting the text to be added.
@@ -40,6 +40,5 @@ public class ShopController {
         //setting the position of the text
         text.setX(250);
         text.setY(250);
-        rootPane.getChildren().
     }
 }
