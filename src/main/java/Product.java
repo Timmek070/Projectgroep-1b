@@ -1,20 +1,24 @@
 public class Product {
 
     private String name;
-    private String category;
     private Double price;
+    private Category category;
 
-    public Product(String name, String category, Double price){
+    public Product(String name, Double price, Category category){
         this.name = name;
-        this.category = category;
         this.price = price;
+        this.category = category;
     }
 
     public String getName(){
         return name;
     }
 
-    public String getCategory() {
+    public Double getPrice() {
+        return price;
+    }
+
+    public Category getCategory() {
         return category;
     }
 }
