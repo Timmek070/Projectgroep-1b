@@ -10,13 +10,12 @@ public class User extends Account {
     private String Type;
     private ArrayList<String> Profession;
 
-    public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type, ArrayList<String> Proffession) {
+    public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type) {
         super(Name, Sex, Dateofbirth);
         this.Username = Username;
         this.Password = Password;
         this.Email = Email;
-        this.Type = Type;
-        this.Profession = Proffession;
+        this.Type = Type;;
     }
 
     public String getUsername() {

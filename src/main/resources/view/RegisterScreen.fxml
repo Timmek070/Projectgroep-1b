@@ -16,21 +16,23 @@
                 <Font name="Corbel" size="12.0" />
             </font>
         </Button>
-        <TextField layoutX="37.0" layoutY="150.0" />
+        <TextField fx:id="emailField" layoutX="37.0" layoutY="150.0" />
         <Text layoutX="37.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
         <TextField fx:id="usernameField" layoutX="37.0" layoutY="202.0" />
         <Text layoutX="37.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
-        <TextField layoutX="37.0" layoutY="250.0" />
+        <TextField fx:id="passwordField" layoutX="37.0" layoutY="250.0" />
         <Text layoutX="37.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-        <TextField layoutX="37.0" layoutY="300.0" />
+        <TextField fx:id="confPasswordField" layoutX="37.0" layoutY="300.0" />
         <Text layoutX="37.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" />
 
-        <TextField layoutX="400.0" layoutY="150.0" />
-        <Text layoutX="400.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naam" />
-        <TextField layoutX="400.0" layoutY="200.0" />
-        <Text layoutX="400.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Geslacht" />
-        <TextField layoutX="400.0" layoutY="250.0" />
-        <Text layoutX="400.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Geboortedatum" />
+        <TextField fx:id="nameField" layoutX="400.0" layoutY="150.0" />
+        <Text layoutX="400.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+        <TextField fx:id="sexField" layoutX="400.0" layoutY="200.0" />
+        <Text layoutX="400.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sex" />
+        <TextField fx:id="birthdateField" layoutX="400.0" layoutY="250.0" />
+        <Text layoutX="400.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthdate" />
+        <TextField fx:id="roleField" layoutX="400.0" layoutY="300.0" />
+        <Text layoutX="400.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
     </children>
 
 </AnchorPane>
