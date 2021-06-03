@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Receipt/Receipt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Receipt/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Receipt/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
