@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CommunitybadgeTest {
 
     ArrayList<String> pl1 = new ArrayList<String>();
-    User u1 = new User("Admin1", "#1Geheim", "1@gmail.com","Jordy", "M", "3-4-2001", "Admin", pl1);
+    User u1 = new User("Admin1", "#1Geheim", "1@gmail.com","Jordy", "M", "3-4-2001", "Admin");
     Child c1 = new Child("Toon" , "F", "1-1-2000");
     Communitybadge c = new Communitybadge(u1);
 

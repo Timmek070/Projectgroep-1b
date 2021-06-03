@@ -3,13 +3,16 @@ package controller;
 import Account.User;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-import java.awt.*;
+import javafx.scene.control.TextField;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class RegisterController {
+public class RegisterController implements Initializable {
     @FXML
     private AnchorPane rootPane;
     @FXML
@@ -31,10 +34,10 @@ public class RegisterController {
 
     public void backToWelcome(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/WelcomeScreen.fxml"));
-        rootPane.getChildren().setAll(pane);
+        this.rootPane.getChildren().setAll(pane);
     }
 
-    public void CreateUser(){
+    public void CreateUser(MouseEvent mouseEvent) throws IOException{
         User user = new User(
                 usernameField.getText(),
                 passwordField.getText(),
@@ -45,6 +48,12 @@ public class RegisterController {
                 roleField.getText()
         );
 
-        
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
+        this.rootPane.getChildren().setAll(pane);
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
 }
