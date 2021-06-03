@@ -87,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryTest">
+  <component name="RunManager" selected="JUnit.CommunitybadgeTest">
     <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -105,16 +105,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AccountTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest.InitUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest" />
-      <option name="METHOD_NAME" value="InitUserTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,6 +127,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="Webshop" />
       <option name="MAIN_CLASS_NAME" value="Webshop.CategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommunitybadgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommunitybadgeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,19 +168,19 @@
     <list>
       <item itemvalue="Android JUnit.Unnamed" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.AccountTest.InitUserTest" />
       <item itemvalue="JUnit.AccountTest" />
       <item itemvalue="JUnit.All in fxml-navigatie" />
       <item itemvalue="JUnit.ProductTest.InitProductTest" />
       <item itemvalue="JUnit.CategoryTest" />
+      <item itemvalue="JUnit.CommunitybadgeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommunitybadgeTest" />
         <item itemvalue="JUnit.CategoryTest" />
         <item itemvalue="JUnit.ProductTest.InitProductTest" />
         <item itemvalue="JUnit.All in fxml-navigatie" />
         <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.InitUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,26 +208,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622725351294">
+    <state x="551" y="281" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1622725795634">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622725351294">
+    <state x="551" y="281" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1622725795634" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622727063387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622725351294">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622727063387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622725351294">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622727063387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
-    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622725446984">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622727063387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1622725446984" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
+    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622725860407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1622725860407" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622725754658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

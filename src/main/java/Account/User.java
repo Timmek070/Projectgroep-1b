@@ -9,6 +9,7 @@ public class User extends Account {
     private String Email;
     private String Type;
     private ArrayList<String> Profession;
+    private Communitybadge badge;
 
     public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type, ArrayList<String> Proffession) {
         super(Name, Sex, Dateofbirth);
@@ -17,6 +18,7 @@ public class User extends Account {
         this.Email = Email;
         this.Type = Type;
         this.Profession = Proffession;
+        updateBadge();
     }
 
     public String getUsername() {
@@ -39,16 +41,24 @@ public class User extends Account {
         return this.Profession;
     }
 
-    public String getRank() {
+    public void updateBadge() {
         if (this.getProfession().size() >= 6) {
-            return "Gold";
+            this.badge = new Communitybadge("Gold");
         }
-        if (this.getProfession().size() >= 4) {
-            return "Silver";
+        else if (this.getProfession().size() >= 4) {
+            this.badge = new Communitybadge("Silver");
+
         }
-        if (this.getProfession().size() >= 2) {
-            return "Bronze";
+        else if (this.getProfession().size() >= 2) {
+            this.badge = new Communitybadge("Bronze");
+
         }
-        return "No badge";
+
+        else {
+            this.badge = null;
+        }
+
     }
+
+    public Communitybadge getBadge(){ return badge;}
 }

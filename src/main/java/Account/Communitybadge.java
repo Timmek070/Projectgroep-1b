@@ -2,18 +2,30 @@ package Account;
 
 public class Communitybadge {
 
-    private String Rank;
-    private User User;
+    private String rank;
+    private double discount = 0.0;
 
-    public Communitybadge(User User){
-        this.Rank = User.getRank();
+
+    public Communitybadge(String rank){
+        this.rank = rank;
+        if (this.rank.equals("Gold")) {
+            this.discount = 0.15;
+        }
+        if (rank.equals("Silver")) {
+            this.discount = 0.1;
+        }
+        if (rank.equals ("Bronze")) {
+            this.discount = 0.05;
+        }
     }
 
     public String getRank() {
-        return this.Rank;
+        return this.rank;
     }
 
-    public User getUser() {
-        return this.User;
+
+    public Double getDiscount() {
+        return discount;
     }
+
 }
