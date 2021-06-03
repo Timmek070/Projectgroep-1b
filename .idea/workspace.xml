@@ -49,6 +49,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -71,12 +72,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RetroRacingClub" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Webshop" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CategoryTest">
     <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -85,13 +96,6 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="fxml-navigatie" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +119,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in fxml-navigatie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Webshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Webshop" />
+      <option name="MAIN_CLASS_NAME" value="Webshop.CategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.InitProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Webshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Webshop" />
+      <option name="MAIN_CLASS_NAME" value="Webshop.ProductTest" />
+      <option name="METHOD_NAME" value="InitProductTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -125,16 +168,20 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.Unnamed" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="JUnit.AccountTest.InitUserTest" />
       <item itemvalue="JUnit.AccountTest" />
+      <item itemvalue="JUnit.All in fxml-navigatie" />
+      <item itemvalue="JUnit.ProductTest.InitProductTest" />
+      <item itemvalue="JUnit.CategoryTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoryTest" />
+        <item itemvalue="JUnit.ProductTest.InitProductTest" />
+        <item itemvalue="JUnit.All in fxml-navigatie" />
         <item itemvalue="JUnit.AccountTest" />
         <item itemvalue="JUnit.AccountTest.InitUserTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -160,5 +207,34 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622725351294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622725351294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622725351294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622725351294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622725351294" />
+    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622725446984">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1622725446984" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622725754658">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622725754658" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Projectgroep_1b$All_in_fxml_navigatie.ic" NAME="All in fxml-navigatie Coverage Results" MODIFIED="1622725348121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
