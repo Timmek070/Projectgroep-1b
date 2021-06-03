@@ -1,3 +1,7 @@
+package Webshop;
+
+import Webshop.Category;
+
 public class Product {
 
     private String name;

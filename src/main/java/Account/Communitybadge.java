@@ -1,3 +1,5 @@
+package Account;
+
 public class Communitybadge {
 
     private String Rank;

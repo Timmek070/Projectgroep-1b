@@ -20,7 +20,7 @@
          <font>
             <Font name="Corbel" size="15.0" />
          </font></Button>
-      <Button layoutX="401.0" layoutY="131.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="126.0" text="Account Details">
+      <Button layoutX="401.0" layoutY="131.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="126.0" text="Details">
          <font>
             <Font name="Corbel" size="15.0" />
          </font>

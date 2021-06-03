@@ -1,3 +1,9 @@
+package Database;
+
+import Account.User;
+import Webshop.Category;
+import Webshop.Product;
+
 import java.util.ArrayList;
 
 public class Database {

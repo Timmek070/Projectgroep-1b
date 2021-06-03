@@ -1,3 +1,5 @@
+package Webshop;
+
 public class Category {
 
     private String name;
