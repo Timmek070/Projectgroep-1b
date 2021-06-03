@@ -3,41 +3,27 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
+    <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Charactermancer/java/LoginSysteem/LoginSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/CharacterSheet/CharacterSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/CharacterSheet/CharacterSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Database/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Donation/donationFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Menu/menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Menu/menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/testCases/donationFunctionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Communitybadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/Communitybadge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JavaFXApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaFXApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +33,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectId" id="1t7IBohVP2mNQbB4aLCL35u5afN" />
+  <component name="ProjectId" id="1tR4mD4j4Pj2KvjthZiRlyaU2ww" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,25 +58,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RetroRacingClub" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
-    <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DatabaseTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="fxml-navigatie" />
@@ -96,44 +81,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Database" />
+      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.InitUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest" />
-      <option name="METHOD_NAME" value="InitUserTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Database.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Database" />
+      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
+      <option name="METHOD_NAME" value="getUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Android JUnit.Unnamed" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.AccountTest.InitUserTest" />
-      <item itemvalue="JUnit.AccountTest" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.InitUserTest" />
+        <item itemvalue="JUnit.DatabaseTest" />
+        <item itemvalue="JUnit.DatabaseTest.getUsers" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -141,11 +123,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="" />
-      <created>1622113568878</created>
+      <changelist id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="" />
+      <created>1622718733227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622113568878</updated>
+      <updated>1622718733227</updated>
     </task>
     <servers />
   </component>
@@ -159,6 +141,15 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
