@@ -6,7 +6,12 @@
 
 <AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShoppingCartController">
     <children>
-        <Label layoutX="23.0" layoutY="42.0" text="Welcome to the Kumbaya ZeroXess Shopping Cart" textFill="#004a80">
+        <Label layoutX="60.0" layoutY="42.0" text="Welcome to the Kumbaya ZeroXess" textFill="#004a80">
+            <font>
+                <Font name="Cooper Black" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="75.0" text="Shopping Cart" textFill="#004a80">
             <font>
                 <Font name="Cooper Black" size="27.0" />
             </font>
@@ -16,13 +21,13 @@
                 <Font name="Corbel" size="15.0" />
             </font>
         </Button>
-        <Button fx:id="receiptButton" layoutX="533.0" layoutY="325.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="141.0" text="Print Receipt">
+        <Button fx:id="receiptButton" layoutX="430.0" layoutY="325.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="141.0" text="Print Receipt">
             <font>
                 <Font name="Corbel" size="15.0" />
             </font>
         </Button>
         
-        <Text layoutX="82.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Closing Africa's connectivity gap to power social and economic progress&quot; ">
+        <Text layoutX="100.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Closing Africa's connectivity gap to power social and economic progress&quot; ">
             <font>
                 <Font name="Corbel Light" size="14.0" />
             </font>

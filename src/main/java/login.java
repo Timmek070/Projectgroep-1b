@@ -9,6 +9,8 @@ public class login {
 
     private login() {
         accounts = new ArrayList<User>();
+        Database database = new Database();
+        this.accounts = database.getAccount();
     }
 
     public static login getInstance() {
@@ -19,7 +21,7 @@ public class login {
         return singleton;
     }
 
-    private void startLogin(String username, String password) {
+    protected static void startLogin(String username, String password) {
 
         for (int i = 0; i > this.accounts.size(); i++) {
             if (this.accounts.get(i).getUsername() == username && this.accounts.get(i).getPassword() == password){
@@ -27,4 +29,10 @@ public class login {
             }
         }
     }
+
+    protected static Boolean getIsLoggedIn()
+    {
+        return this.isLoggedIn;
+    }
+
 }

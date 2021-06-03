@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 
 public class Database {
+    private ArrayList<User>Accounts;
     public Database() {
         ArrayList<String> professions = new ArrayList<>();
+        this.Accounts = new ArrayList<>();
         professions.add("woodworking");
         professions.add("painting");
 
@@ -19,9 +21,15 @@ public class Database {
 
         User toon = new User("antonio", "hallo1", "toontje@toon.com", "Toon Langendam", "M", "23051998", "User", professions);
         User jan = new User("jantje","hallo1", "jantje@jan.com", "Jan Glazenborg","M","23081998", "User", professions);
+        Accounts.add(toon);
+        Accounts.add(jan);
+
     }
 
-
-
-
+    public ArrayList<User> getAccount() {
+        return Accounts;
+    }
+    public void addAccount(User user){
+        this.Accounts.add(user);
+    }
 }
