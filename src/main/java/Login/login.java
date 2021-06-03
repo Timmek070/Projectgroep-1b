@@ -23,12 +23,17 @@ public class login {
         return singleton;
     }
 
-    private void startLogin(String username, String password) {
+    protected void startLogin(String username, String password) {
 
         for (int i = 0; i > this.accounts.size(); i++) {
             if (this.accounts.get(i).getUsername() == username && this.accounts.get(i).getPassword() == password){
                 this.isLoggedIn = true;
             }
         }
+    }
+
+    protected Boolean getIsLoggedIn()
+    {
+        return this.isLoggedIn;
     }
 }

@@ -22,22 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
+    <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="new branch login_test2.0">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Login/loginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Communitybadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/Communitybadge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +37,16 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -71,6 +65,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RetroRacingClub" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -159,7 +155,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622113568878</updated>
+      <workItem from="1622725886075" duration="723000" />
     </task>
+    <task id="LOCAL-00001" summary="new branch login_test2.0">
+      <created>1622726154677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622726154677</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,5 +178,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new branch login_test2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="new branch login_test2.0" />
   </component>
 </project>
