@@ -25,9 +25,8 @@
     <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Account/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -199,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622113568878</updated>
-      <workItem from="1622820424795" duration="2678000" />
+      <workItem from="1622820424795" duration="4270000" />
     </task>
     <servers />
   </component>

@@ -23,6 +23,8 @@ public class User extends Account {
         Profession.add("a");
         Profession.add("a");
         Profession.add("a");
+        updateBadge();
+
     }
 
     public String getUsername() {

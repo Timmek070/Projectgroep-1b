@@ -22,21 +22,14 @@ public class ShoppingCartController {
     @FXML
     TextArea bruh;
     public void initialize(){
-        System.out.println("Gamign");
-        ArrayList<Product> products = new ArrayList<>();
         User ingelogdeUser = new User("gert","gertje","gertje@gmail.com","gert","m","25-09-2001","admin");
+
+        ArrayList<Product> products = new ArrayList<>();
         products.add(new Product("product1",2.10,new Category("gaming")));
-        products.add(new Product("product2",2.10,new Category("gaming")));
-        System.out.println("gaming2");
+        products.add(new Product("product2",Math.round(2.10 * 100.0) / 100.0,new Category("gaming")));
+
         Receipt receipt = new Receipt(ingelogdeUser,products);
-        System.out.println("gaming3");
-        System.out.println(receipt.getReceipt());
-
-        System.out.println("gaming4");
-
         bruh.setText(receipt.getReceipt());
-        System.out.println("gaming5");
-
     }
     public void backToShop(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ShopScreen.fxml"));
