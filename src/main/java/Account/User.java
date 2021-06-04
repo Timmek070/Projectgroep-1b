@@ -11,14 +11,18 @@ public class User extends Account {
     private ArrayList<String> Profession;
     private Communitybadge badge;
 
-    public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type, ArrayList<String> Proffession) {
+    public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type) {
         super(Name, Sex, Dateofbirth);
         this.Username = Username;
         this.Password = Password;
         this.Email = Email;
+<<<<<<< HEAD
         this.Type = Type;
         this.Profession = Proffession;
         updateBadge();
+=======
+        this.Type = Type;;
+>>>>>>> feature-register-function
     }
 
     public String getUsername() {
