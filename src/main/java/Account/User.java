@@ -16,13 +16,13 @@ public class User extends Account {
         this.Username = Username;
         this.Password = Password;
         this.Email = Email;
-<<<<<<< HEAD
         this.Type = Type;
-        this.Profession = Proffession;
-        updateBadge();
-=======
-        this.Type = Type;;
->>>>>>> feature-register-function
+        this.Profession=new ArrayList<>();
+        Profession.add("a");
+        Profession.add("a");
+        Profession.add("a");
+        Profession.add("a");
+        Profession.add("a");
     }
 
     public String getUsername() {

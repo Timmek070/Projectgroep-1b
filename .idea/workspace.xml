@@ -23,20 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Communitybadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/Communitybadge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/HomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunitybadgeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/HomeScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Account/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/ShoppingCartScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,22 +62,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RetroRacingClub" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2021EmailerDIP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="Webshop" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Webshop" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Webshop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Receipt" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CommunitybadgeTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -100,10 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,19 +175,19 @@
     <list>
       <item itemvalue="Android JUnit.Unnamed" />
       <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.AccountTest" />
       <item itemvalue="JUnit.All in fxml-navigatie" />
       <item itemvalue="JUnit.ProductTest.InitProductTest" />
       <item itemvalue="JUnit.CategoryTest" />
       <item itemvalue="JUnit.CommunitybadgeTest" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CommunitybadgeTest" />
         <item itemvalue="JUnit.CategoryTest" />
         <item itemvalue="JUnit.ProductTest.InitProductTest" />
         <item itemvalue="JUnit.All in fxml-navigatie" />
-        <item itemvalue="JUnit.AccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,8 +199,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622113568878</updated>
+      <workItem from="1622820424795" duration="2678000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,36 +227,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="551" y="281" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1622725795634">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="551" y="281" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1622725795634" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622727063387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622727063387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622727063387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622727063387">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622727063387" />
-    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1622725860407">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="540" y="210" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1622725860407" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622725754658">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622725754658" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projectgroep_1b$All_in_fxml_navigatie.ic" NAME="All in fxml-navigatie Coverage Results" MODIFIED="1622725348121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
