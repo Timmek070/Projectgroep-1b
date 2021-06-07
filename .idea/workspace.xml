@@ -3,31 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +13,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -44,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -53,14 +30,8 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1t7IBohVP2mNQbB4aLCL35u5afN" />
+  <component name="ProjectId" id="1tR4mD4j4Pj2KvjthZiRlyaU2ww" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,43 +39,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2021EmailerDIP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Webshop" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="Webshop" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Receipt" />
+      <recent name="Database" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit" nameIsGenerated="true">
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="fxml-navigatie" />
@@ -112,116 +62,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in fxml-navigatie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Webshop.*" />
+          <option name="PATTERN" value="Database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Webshop" />
-      <option name="MAIN_CLASS_NAME" value="Webshop.CategoryTest" />
+      <option name="PACKAGE_NAME" value="Database" />
+      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommunitybadgeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CommunitybadgeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.InitProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatabaseTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Webshop.*" />
+          <option name="PATTERN" value="Database.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Webshop" />
-      <option name="MAIN_CLASS_NAME" value="Webshop.ProductTest" />
-      <option name="METHOD_NAME" value="InitProductTest" />
+      <option name="PACKAGE_NAME" value="Database" />
+      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
+      <option name="METHOD_NAME" value="getUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Android JUnit.Unnamed" />
-      <item itemvalue="JUnit.Unnamed" />
-      <item itemvalue="JUnit.All in fxml-navigatie" />
-      <item itemvalue="JUnit.ProductTest.InitProductTest" />
-      <item itemvalue="JUnit.CategoryTest" />
-      <item itemvalue="JUnit.CommunitybadgeTest" />
-      <item itemvalue="Application.Main" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CommunitybadgeTest" />
-        <item itemvalue="JUnit.CategoryTest" />
-        <item itemvalue="JUnit.ProductTest.InitProductTest" />
-        <item itemvalue="JUnit.All in fxml-navigatie" />
+        <item itemvalue="JUnit.DatabaseTest" />
+        <item itemvalue="JUnit.DatabaseTest.getUsers" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="512ceb2f-b79e-446a-a7be-a4b36b9982b2" name="Default Changelist" comment="" />
-      <created>1622113568878</created>
+      <changelist id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="" />
+      <created>1622718733227</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1622113568878</updated>
-      <workItem from="1622820424795" duration="4270000" />
+      <updated>1622718733227</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -235,7 +124,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projectgroep_1b$All_in_fxml_navigatie.ic" NAME="All in fxml-navigatie Coverage Results" MODIFIED="1622725348121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
