@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CommunitybadgeTest {
 
     ArrayList<String> pl1 = new ArrayList<String>();
-    User u1 = new User("Admin1", "#1Geheim", "1@gmail.com","Jordy", "M", "3-4-2001", "Admin", pl1);
+    User u1 = new User("Admin1", "#1Geheim", "1@gmail.com","Jordy", "M", "3-4-2001", "Admin");
     Child c1 = new Child("Toon" , "F", "1-1-2000");
-    Communitybadge c = new Communitybadge(u1);
+
 
 
     @Test
@@ -23,7 +23,8 @@ class CommunitybadgeTest {
         pl1.add("Software Engineer");
         pl1.add("Software Engineer");
         pl1.add("Software Engineer");
-        assertEquals("Gold", u1.getRank());
+        u1.updateBadge();
+        assertEquals("Gold", u1.getBadge().getRank());
     }
 
     @Test
@@ -32,13 +33,15 @@ class CommunitybadgeTest {
         pl1.add("Software Engineer");
         pl1.add("Software Engineer");
         pl1.add("Software Engineer");
-        assertEquals("Silver", u1.getRank());
+        u1.updateBadge();
+        assertEquals("Silver", u1.getBadge().getRank());
     }
 
     @Test
     void InitBadgeTestBronze() {
         pl1.add("Software Engineer");
         pl1.add("Software Engineer");
-        assertEquals("Bronze", u1.getRank());
+        u1.updateBadge();
+        assertEquals("Bronze", u1.getBadge().getRank());
     }
 }
