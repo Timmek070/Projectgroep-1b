@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>

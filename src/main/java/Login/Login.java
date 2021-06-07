@@ -13,7 +13,7 @@ public class Login {
     private ArrayList<User> accounts;
     private Boolean isLoggedIn = false;
     private Database database;
-    private User User;
+    private User ingelogdeUser;
 
 
     private Login() {
@@ -39,7 +39,7 @@ public class Login {
         for (int i = 0; i < this.accounts.size(); i++) {
             if (this.accounts.get(i).getUsername().equals(username) && this.accounts.get(i).getPassword().equals(password)){
                 this.isLoggedIn = true;
-                this.User = this.accounts.get(i);
+                this.ingelogdeUser = this.accounts.get(i);
             }
         }
 
