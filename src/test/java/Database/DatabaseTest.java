@@ -12,7 +12,7 @@ class DatabaseTest {
 
     @Test
     void getUsers() {
-        ArrayList<User> Users = new ArrayList<>();
+        ArrayList<User> Users;
         Users = database.getUsers();
         String username;
         for (int i = 0; i < Users.size(); i++) {

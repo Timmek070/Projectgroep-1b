@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Charactermancer/java/LoginSysteem/LoginSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/CharacterSheet/CharacterSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/CharacterSheet/CharacterSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Database/database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Donation/donationFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/Menu/menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/Menu/menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Charactermancer/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Charactermancer/java/testCases/donationFunctionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JavaFXApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JavaFXApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Login/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/LoginScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +61,7 @@
       <recent name="Database" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="fxml-navigatie" />
@@ -114,9 +102,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DatabaseTest" />
         <item itemvalue="JUnit.DatabaseTest.getUsers" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +129,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

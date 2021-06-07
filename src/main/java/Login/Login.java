@@ -13,11 +13,12 @@ public class Login {
     private ArrayList<User> accounts;
     private Boolean isLoggedIn = false;
     private Database database;
+    private User User;
 
 
     private Login() {
         this.database = new Database();
-     this.accounts = new ArrayList<>();
+        this.accounts = new ArrayList<>();
     }
 
     public static Login getInstance() {
@@ -29,13 +30,19 @@ public class Login {
 
     public void startLogin(String username, String password) {
 
+        System.out.println(username);
+        System.out.println(password);
+
+
         this.accounts = database.getUsers();
 
-        for (int i = 0; i > this.accounts.size(); i++) {
-            if (this.accounts.get(i).getUsername() == username && this.accounts.get(i).getPassword() == password){
+        for (int i = 0; i < this.accounts.size(); i++) {
+            if (this.accounts.get(i).getUsername().equals(username) && this.accounts.get(i).getPassword().equals(password)){
                 this.isLoggedIn = true;
+                this.User = this.accounts.get(i);
             }
         }
+
     }
     public Database getDatabase(){
         return this.database;

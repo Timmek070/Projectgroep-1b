@@ -13,7 +13,7 @@ public class Database {
         professions.add("woodworking");
         professions.add("painting");
         Category memer = new Category("woodworking");
-
+        this.Users = new ArrayList<>();
 
 //        Product plank = new Product("Plank", "woodworking", 10.0);
 //        Product screw = new Product("Screw", "woodworking", 0.5);
@@ -28,11 +28,16 @@ public class Database {
         User toon = new User("antonio", "hallo1", "toontje@toon.com", "Toon Langendam", "M", "23051998", "User", professions);
         User jan = new User("jantje","hallo1", "jantje@jan.com", "Jan Glazenborg","M","23081998", "User", professions);
 
+
         this.Users.add(Admin);
         this.Users.add(toon);
         this.Users.add(jan);
 
+
+
     }
+
+
 
     public ArrayList<User> getUsers(){
         return Users;

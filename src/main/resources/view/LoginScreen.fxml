@@ -28,7 +28,7 @@
       <TextField  fx:id="passwordField" layoutX="199.0" layoutY="174.0" />
       <Text layoutX="199.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
 
-      <Text fx:id="foutmeldingText" layoutX="199.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+      <Text fx:id="foutmeldingText" layoutX="199.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
 
 
    </children>
