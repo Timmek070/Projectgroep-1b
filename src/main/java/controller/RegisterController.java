@@ -55,7 +55,7 @@ public class RegisterController{
             AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
             this.rootPane.getChildren().setAll(pane);
         } else {
-            foutmeldingText.setText("wachtwoord komt niet overeen!");
+            foutmeldingText.setText("Passwords don't match!");
         }
     }
 }

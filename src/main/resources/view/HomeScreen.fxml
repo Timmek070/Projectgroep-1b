@@ -12,7 +12,7 @@
          <font>
             <Font name="Cooper Black" size="27.0" />
          </font></Label>
-      <Button fx:id="backButton" layoutX="47.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="105.0" prefWidth="126.0" text="Logout">
+      <Button fx:id="logout" layoutX="47.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="105.0" prefWidth="126.0" text="Logout">
          <font>
             <Font name="Corbel" size="15.0" />
          </font></Button>

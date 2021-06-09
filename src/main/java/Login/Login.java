@@ -55,4 +55,9 @@ public class Login {
     public void addUserDatabase(User user){
         database.addUser(user);
     }
+
+    public void setLogout(){
+        this.isLoggedIn = false;
+        this.ingelogdeUser = null;
+    }
 }

@@ -37,7 +37,7 @@ public class LoginController implements Initializable {
         rootPane.getChildren().setAll(pane);
         }
           else{
-            foutmeldingText.setText("Inloggen niet gelukt");
+            foutmeldingText.setText("Login Failed!");
         }
     }
 
