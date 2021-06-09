@@ -51,4 +51,8 @@ public class Login {
     public Boolean getLoggedIn() {
         return isLoggedIn;
     }
+
+    public void addUserDatabase(User user){
+        database.addUser(user);
+    }
 }

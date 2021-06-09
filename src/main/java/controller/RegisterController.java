@@ -2,6 +2,7 @@ package controller;
 
 import Account.User;
 import Database.Database;
+import Login.Login;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -40,16 +41,19 @@ public class RegisterController{
 
     public void CreateUser(MouseEvent mouseEvent) throws IOException{
         User user = new User(
-                usernameField.getText(),
-                passwordField.getText(),
-                emailField.getText(),
-                nameField.getText(),
-                sexField.getText(),
-                birthdateField.getText(),
-                roleField.getText()
+                usernameField.getCharacters().toString(),
+                passwordField.getCharacters().toString(),
+                emailField.getCharacters().toString(),
+                nameField.getCharacters().toString(),
+                sexField.getCharacters().toString(),
+                birthdateField.getCharacters().toString(),
+                roleField.getCharacters().toString()
         );
-        Database database = new Database();
-        database.addUser(user);
+
+        System.out.println(user);
+        System.out.println(usernameField.getCharacters().toString());
+
+        Login.getInstance().addUserDatabase(user);
 
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
         this.rootPane.getChildren().setAll(pane);
