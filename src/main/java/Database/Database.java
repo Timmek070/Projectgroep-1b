@@ -24,9 +24,9 @@ public class Database {
 //        Product paintRoller = new Product("Paint roller", "painting", 4.0);
 
 
-        User Admin = new User("Admin", "Admin", "Admin@Admin.com", "Admin", "M","01011111", "User",professions);
-        User toon = new User("antonio", "hallo1", "toontje@toon.com", "Toon Langendam", "M", "23051998", "User", professions);
-        User jan = new User("jantje","hallo1", "jantje@jan.com", "Jan Glazenborg","M","23081998", "User", professions);
+        User Admin = new User("Admin", "Admin", "Admin@Admin.com", "Admin", "M","01011111", "User");
+        User toon = new User("antonio", "hallo1", "toontje@toon.com", "Toon Langendam", "M", "23051998", "User");
+        User jan = new User("jantje","hallo1", "jantje@jan.com", "Jan Glazenborg","M","23081998", "User");
 
 
         this.Users.add(Admin);

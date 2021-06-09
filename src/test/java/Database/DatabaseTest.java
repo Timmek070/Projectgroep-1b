@@ -26,6 +26,6 @@ class DatabaseTest {
     void addUser(){
         ArrayList<String> profession = new ArrayList<>();
         profession.add("woodworking");
-        User user = new User("GivanStaub", "#1Geheim", "GivanStaub@gmail.com","Givan", "M", "23041998", "User", profession);
+        User user = new User("GivanStaub", "#1Geheim", "GivanStaub@gmail.com","Givan", "M", "23041998", "User");
     }
 }
