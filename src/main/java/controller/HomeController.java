@@ -23,4 +23,9 @@ public class HomeController {
         rootPane.getChildren().setAll(pane);
     }
 
+    public void details (MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/AccountDetailsScreen.fxml"));
+        rootPane.getChildren().setAll(pane);
+    }
+
 }
