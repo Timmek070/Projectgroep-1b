@@ -4,6 +4,7 @@ import Account.User;
 import Login.Login;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.PasswordField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
@@ -19,9 +20,9 @@ public class RegisterController{
     @FXML
     TextField usernameField;
     @FXML
-    TextField passwordField;
+    PasswordField passwordField;
     @FXML
-    TextField confPasswordField;
+    PasswordField confPasswordField;
     @FXML
     TextField nameField;
     @FXML

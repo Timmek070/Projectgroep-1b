@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/LoginScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/view/RegisterScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/RegisterScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ShoppingCartScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1tR4mD4j4Pj2KvjthZiRlyaU2ww" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -129,22 +139,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1623237562870">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1623329348655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1623237562870">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623329348655" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1623329348655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1623237562870">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623329348655" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1623329348655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1623237562870">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623329348655" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1623329348655">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623329348655" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

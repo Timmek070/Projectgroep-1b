@@ -4,6 +4,7 @@ import Login.Login;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.PasswordField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.TextField;
@@ -23,7 +24,7 @@ public class LoginController implements Initializable {
     @FXML
     private TextField usernameField;
     @FXML
-    private TextField passwordField;
+    private PasswordField passwordField;
 
 
     public void back(MouseEvent mouseEvent) throws IOException {
