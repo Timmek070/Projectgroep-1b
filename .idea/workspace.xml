@@ -34,6 +34,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1tR4mD4j4Pj2KvjthZiRlyaU2ww" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,11 +58,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Database" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -129,22 +139,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1623237562870">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1623330586419">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1623330586419" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1623333191869">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1623237562870">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623333191869" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1623333191869">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1623237562870">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623333191869" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1623333191869">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1623237562870">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623333191869" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1623333191869">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623237562870" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623333191869" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

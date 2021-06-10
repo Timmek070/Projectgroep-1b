@@ -52,6 +52,10 @@ public class Login {
         return isLoggedIn;
     }
 
+    public User getIngelogdeUser () {
+        return ingelogdeUser;
+    }
+
     public void addUserDatabase(User user){
         database.addUser(user);
     }
