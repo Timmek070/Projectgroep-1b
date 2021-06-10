@@ -29,7 +29,7 @@ public class ShoppingCartController {
         products.add(new Product("product1",2.10,new Category("gaming"), new Button("voeg toe")));
         products.add(new Product("product2",Math.round(2.10 * 100.0) / 100.0,new Category("gaming"), new Button("voeg toe")));
 
-        Receipt receipt = new Receipt(ingelogdeUser,products);
+        Receipt receipt = new Receipt(products);
         bruh.setText(receipt.getReceipt());
     }
     public void backToShop(MouseEvent mouseEvent) throws IOException {
