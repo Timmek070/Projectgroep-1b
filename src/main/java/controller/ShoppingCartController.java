@@ -1,7 +1,6 @@
 package controller;
 
 import Account.User;
-import Webshop.Category;
 import Webshop.Product;
 import Webshop.Receipt;
 import javafx.fxml.FXML;
@@ -26,8 +25,8 @@ public class ShoppingCartController {
         User ingelogdeUser = new User("gert","gertje","gertje@gmail.com","gert","m","25-09-2001","admin");
 
         ArrayList<Product> products = new ArrayList<>();
-        products.add(new Product("product1",2.10,new Category("gaming"), new Button("voeg toe")));
-        products.add(new Product("product2",Math.round(2.10 * 100.0) / 100.0,new Category("gaming"), new Button("voeg toe")));
+        products.add(new Product("product1",2.10,"gaming", new Button("voeg toe")));
+        products.add(new Product("product2",Math.round(2.10 * 100.0) / 100.0,"gaming", new Button("voeg toe")));
 
         Receipt receipt = new Receipt(ingelogdeUser,products);
         bruh.setText(receipt.getReceipt());

@@ -1,6 +1,5 @@
 package controller;
 
-import Webshop.Category;
 import Webshop.Product;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -12,8 +11,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import java.io.IOException;
 import java.net.URL;
@@ -34,10 +31,13 @@ public class ShopController implements Initializable {
     private TableColumn<Product, Double> price;
 
     @FXML
-    private TableColumn<Product, Category> category;
+    private TableColumn<Product, String> category;
 
     @FXML
     private TableColumn<Product, Button> button;
+
+    private Product kaas = new Product("Kaas", 2.00, "Woodworking", new Button("Add"));
+    private Product barend = new Product("Barend", 10.00, "Barend", new Button("Add"));
 
     public void backToHome(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
@@ -49,21 +49,18 @@ public class ShopController implements Initializable {
         rootPane.getChildren().setAll(pane);
     }
 
-    ObservableList<Category> categorylist = FXCollections.observableArrayList(
-            new Category("woodworking"),
-            new Category("Barend")
+    ObservableList<String> categorylist = FXCollections.observableArrayList(
+            kaas.getCategory(),
+            barend.getCategory()
     );
 
-    ObservableList<Product> list = FXCollections.observableArrayList(
-            new Product("Kaas", 2.00, categorylist.get(0), new Button("voeg toe")),
-            new Product("Barend", 10.00, categorylist.get(1), new Button("voeg toe"))
-    );
+    ObservableList<Product> list = FXCollections.observableArrayList(kaas, barend);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
-        category.setCellValueFactory(new PropertyValueFactory<Product, Category>("category"));
+        category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
 
         table.setItems(list);

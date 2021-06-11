@@ -1,23 +1,24 @@
 package Database;
 
 import Account.User;
-import Webshop.Category;
+import Webshop.Product;
+import javafx.scene.control.Button;
 
 import java.util.ArrayList;
 
 public class Database {
     private ArrayList<User> Users;
+    private ArrayList<Product> product;
 
     public Database() {
         ArrayList<String> professions = new ArrayList<>();
         professions.add("woodworking");
         professions.add("painting");
-        Category memer = new Category("woodworking");
         this.Users = new ArrayList<>();
 
-//        Product plank = new Product("Plank", "woodworking", 10.0);
-//        Product screw = new Product("Screw", "woodworking", 0.5);
-//        Product screwdriver = new Product("Screwdriver", "woodworking", 3.0);
+        Product plank = new Product("Plank", 10.0, "Woodworking", new Button());
+        Product screw = new Product("Screw", 0.5,"Woodworking", new Button());
+        Product screwdriver = new Product("Screwdriver", 3.0, "Woodworking", new Button());
 //
 //        Product pinkPaint = new Product("Pink paint 2L", "painting", 15.0);
 //        Product wideBrush = new Product("Wide brush", "painting", 4.0);
@@ -33,11 +34,15 @@ public class Database {
         this.Users.add(toon);
         this.Users.add(jan);
 
-
+        this.product.add(plank);
+        this.product.add(screw);
+        this.product.add(screwdriver);
 
     }
 
-
+    public ArrayList<Product> getProduct(){
+        return product;
+    }
 
     public ArrayList<User> getUsers(){
         return Users;
