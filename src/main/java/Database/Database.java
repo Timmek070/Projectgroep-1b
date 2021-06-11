@@ -1,7 +1,6 @@
 package Database;
 
 import Account.User;
-import Webshop.Category;
 
 import java.util.ArrayList;
 
@@ -12,7 +11,7 @@ public class Database {
         ArrayList<String> professions = new ArrayList<>();
         professions.add("woodworking");
         professions.add("painting");
-        Category memer = new Category("woodworking");
+        String memer = "woodworking";
         this.Users = new ArrayList<>();
 
 //        Product plank = new Product("Plank", "woodworking", 10.0);

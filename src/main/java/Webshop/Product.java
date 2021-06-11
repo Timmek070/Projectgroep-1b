@@ -6,10 +6,10 @@ public class Product {
 
     private String name;
     private Double price;
-    private Category category;
+    private String category;
     private Button button;
 
-    public Product(String name, Double price, Category category, Button button){
+    public Product(String name, Double price, String category, Button button){
         this.name = name;
         this.price = price;
         this.category = category;
@@ -24,7 +24,7 @@ public class Product {
         return price;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
