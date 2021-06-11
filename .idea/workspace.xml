@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Webshop/CategoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Webshop/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Webshop/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/ShopScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/ShopScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,22 +158,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1623413463832" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1623413455081">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1623416400944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623413455081" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1623413455081">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623416400944" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1623416400944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623413455081" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1623413455081">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623416400944" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1623416400944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623413455081" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1623413455081">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623416400944" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1623416400944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623413455081" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623416400944" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
