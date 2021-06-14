@@ -1,7 +1,6 @@
 package controller;
 
-import Account.User;
-import Login.Login;
+import Login.Register;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.PasswordField;
@@ -41,17 +40,15 @@ public class RegisterController{
 
     public void CreateUser(MouseEvent mouseEvent) throws IOException{
         if(passwordField.getCharacters().toString().equals(confPasswordField.getCharacters().toString())){
-            User user = new User(
-                    usernameField.getCharacters().toString(),
-                    passwordField.getCharacters().toString(),
-                    emailField.getCharacters().toString(),
-                    nameField.getCharacters().toString(),
-                    sexField.getCharacters().toString(),
-                    birthdateField.getCharacters().toString(),
-                    roleField.getCharacters().toString()
-            );
-
-            Login.getInstance().addUserDatabase(user);
+            Register register = new Register();
+            register.registerUser(
+                    usernameField.getText(),
+                    passwordField.getText(),
+                    emailField.getText(),
+                    nameField.getText(),
+                    sexField.getText(),
+                    birthdateField.getText(),
+                    roleField.getText());
 
             AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/LoginScreen.fxml"));
             this.rootPane.getChildren().setAll(pane);

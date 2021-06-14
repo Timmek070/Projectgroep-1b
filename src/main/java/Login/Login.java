@@ -32,14 +32,22 @@ public class Login {
 
 
         this.accounts = database.getUsers();
-
         for (int i = 0; i < this.accounts.size(); i++) {
-            if (this.accounts.get(i).getUsername().equals(username) && this.accounts.get(i).getPassword().equals(password)){
+            if (userExist(username, password)) {
                 this.isLoggedIn = true;
                 this.ingelogdeUser = this.accounts.get(i);
             }
         }
 
+    }
+    public Boolean userExist(String username,String password){
+        this.accounts = database.getUsers();
+        for (int i = 0; i < this.accounts.size(); i++) {
+            if (this.accounts.get(i).getUsername().equals(username) && this.accounts.get(i).getPassword().equals(password)){
+                return true;
+            }
+        }
+        return false;
     }
     public Database getDatabase(){
         return this.database;

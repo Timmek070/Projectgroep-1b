@@ -33,7 +33,7 @@ public class LoginController implements Initializable {
     }
     public void Login(MouseEvent mouseEvent) throws IOException {
         Login.getInstance().startLogin(usernameField.getCharacters().toString(), passwordField.getCharacters().toString());
-        if (Login.getInstance().getLoggedIn()){
+        if (Login.getInstance().getLoggedIn() && !usernameField.getCharacters().toString().equals("") && !passwordField.getCharacters().toString().equals("")){
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
         rootPane.getChildren().setAll(pane);
         }
