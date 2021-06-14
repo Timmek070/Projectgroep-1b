@@ -17,6 +17,9 @@ public class Communitybadge {
         if (rank.equals ("Bronze")) {
             this.discount = 0.05;
         }
+        else {
+            this.discount = 0.0;
+        }
     }
 
     public String getRank() {

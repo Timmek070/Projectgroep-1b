@@ -1,5 +1,7 @@
 package Account;
 
+import controller.ProfessionScreenController;
+
 import java.util.ArrayList;
 
 public class User extends Account {
@@ -18,13 +20,24 @@ public class User extends Account {
         this.Email = Email;
         this.Type = Type;
         this.Profession=new ArrayList<>();
-        Profession.add("a");
-        Profession.add("a");
-        Profession.add("a");
-        Profession.add("a");
-        Profession.add("a");
+        Profession.add("Villager");
         updateBadge();
 
+    }
+
+    public void addProfession (String profession) {
+        Profession.add(profession);
+        updateBadge();
+    }
+
+    public void removeProfessionByName (String profession) {
+        for (int i=0; i <Profession.size(); i++) {
+            String professionCheck = Profession.get(i);
+            if (profession.equals(professionCheck)){
+                Profession.remove(i);
+            }
+        }
+        updateBadge();
     }
 
     public String getUsername() {
@@ -59,9 +72,8 @@ public class User extends Account {
             this.badge = new Communitybadge("Bronze");
 
         }
-
         else {
-            this.badge = null;
+            this.badge = new Communitybadge("No badge yet");
         }
 
     }

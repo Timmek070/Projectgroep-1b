@@ -43,7 +43,8 @@ public class AccountDetailsController implements Initializable {
     Text roleText;
     @FXML
     Text badgeText;
-
+    @FXML
+    Text numberOfProfessionsText;
 
 
     public void backToHome(MouseEvent mouseEvent) throws IOException {
@@ -51,7 +52,18 @@ public class AccountDetailsController implements Initializable {
         this.rootPane.getChildren().setAll(pane);
     }
 
+    public void toProfessions(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ProfessionScreen.fxml"));
+        this.rootPane.getChildren().setAll(pane);
+    }
+
     public void getDetails () {
+
+//        String badge = "";
+//        if (Login.getInstance().getIngelogdeUser().getBadge().getRank() != null) {
+//            badge = Login.getInstance().getIngelogdeUser().getBadge().getRank();
+//        }
+
         emailText.setText(Login.getInstance().getIngelogdeUser().getEmail());
         usernameText.setText(Login.getInstance().getIngelogdeUser().getUsername());
         nameText.setText(Login.getInstance().getIngelogdeUser().getName());
@@ -59,6 +71,7 @@ public class AccountDetailsController implements Initializable {
         birthDateText.setText(Login.getInstance().getIngelogdeUser().getDateofbirth());
         roleText.setText(Login.getInstance().getIngelogdeUser().getType());
         badgeText.setText(Login.getInstance().getIngelogdeUser().getBadge().getRank());
+        numberOfProfessionsText.setText("" + Login.getInstance().getIngelogdeUser().getProfession().size());
     }
 
     @Override
