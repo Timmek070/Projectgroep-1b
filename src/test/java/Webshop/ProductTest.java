@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
 
-    Category testCategory = new Category("woodworking");
+    String testCategory = "woodworking";
     Button testButton = new Button("Voeg toe");
     Product testProduct = new Product("plank", 3.0 , testCategory, testButton);
 
@@ -14,7 +14,7 @@ class ProductTest {
     public void InitProductTest() {
         assertEquals("plank", testProduct.getName());
         assertEquals(3.0, testProduct.getPrice());
-        assertEquals("woodworking", testProduct.getCategory().getName());
+        assertEquals("woodworking", testProduct.getCategory());
     }
 
 }

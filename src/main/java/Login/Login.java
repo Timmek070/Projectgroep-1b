@@ -4,9 +4,6 @@ import Account.User;
 import Database.Database;
 import java.util.ArrayList;
 
-
-
-
 public class Login {
 
     private static Login singleton = null;
