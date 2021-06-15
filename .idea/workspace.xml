@@ -23,9 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Login/MCCtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/MCCtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/MCCtest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +92,7 @@
       <recent name="Database" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.addUserDatabase">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="fxml-navigatie" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MCCtest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -114,38 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Database" />
-      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseTest.getUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Database" />
-      <option name="MAIN_CLASS_NAME" value="Database.DatabaseTest" />
-      <option name="METHOD_NAME" value="getUsers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.addUserDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MCCtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
       <extension name="coverage">
         <pattern>
@@ -154,42 +115,90 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Login" />
-      <option name="MAIN_CLASS_NAME" value="Login.LoginTest" />
-      <option name="METHOD_NAME" value="addUserDatabase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReceiptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fxml-navigatie" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Webshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Webshop" />
-      <option name="MAIN_CLASS_NAME" value="Webshop.ReceiptTest" />
+      <option name="MAIN_CLASS_NAME" value="Login.MCCtest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MCCtest.MCCtest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.MCCtest" />
+      <option name="METHOD_NAME" value="MCCtest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MCCtest.MCCtest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.MCCtest" />
+      <option name="METHOD_NAME" value="MCCtest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MCCtest.MCCtest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.MCCtest" />
+      <option name="METHOD_NAME" value="MCCtest3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MCCtest.MCCtest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.MCCtest" />
+      <option name="METHOD_NAME" value="MCCtest6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.DatabaseTest" />
-      <item itemvalue="JUnit.DatabaseTest.getUsers" />
-      <item itemvalue="JUnit.ReceiptTest" />
-      <item itemvalue="JUnit.LoginTest.addUserDatabase" />
+      <item itemvalue="JUnit.MCCtest.MCCtest2" />
+      <item itemvalue="JUnit.MCCtest.MCCtest1" />
+      <item itemvalue="JUnit.MCCtest.MCCtest3" />
+      <item itemvalue="JUnit.MCCtest.MCCtest6" />
+      <item itemvalue="JUnit.MCCtest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.addUserDatabase" />
-        <item itemvalue="JUnit.ReceiptTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.DatabaseTest" />
-        <item itemvalue="JUnit.DatabaseTest.getUsers" />
+        <item itemvalue="JUnit.MCCtest" />
+        <item itemvalue="JUnit.MCCtest.MCCtest1" />
+        <item itemvalue="JUnit.MCCtest.MCCtest6" />
+        <item itemvalue="JUnit.MCCtest.MCCtest3" />
+        <item itemvalue="JUnit.MCCtest.MCCtest2" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +211,14 @@
       <option name="presentableId" value="Default" />
       <updated>1622718733227</updated>
     </task>
+    <task id="LOCAL-00001" summary="feature-MCC-test created">
+      <created>1623785239478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623785239478</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +232,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feature-MCC-test created" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature-MCC-test created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
