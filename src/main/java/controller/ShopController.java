@@ -8,6 +8,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
@@ -15,13 +16,15 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.TableView;
-
+import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ShopController implements Initializable {
+    private ObservableList<Product> products = FXCollections.observableArrayList();
+
+    private ObservableList<Product> shoppingcart = FXCollections.observableArrayList();
 
     @FXML
     private AnchorPane rootPane;
@@ -39,44 +42,26 @@ public class ShopController implements Initializable {
     private TableColumn<Product, String> category;
 
     @FXML
+    private TableColumn<Product, Button> button;
+
+    @FXML
     private MenuItem woodworking;
 
     @FXML
     private MenuItem powertools;
 
-    @FXML
-    private TableColumn<Product, Button> button;
-
     private String productCategory;
 
-    private ArrayList<Product> products = new ArrayList<>();
+    Button addButton = new Button("Add");
 
-    private Product wood = new Product("wood", 2.00, "woodworking", new Button("voeg toe"));
-    private Product nail = new Product("nail", 10.00, "powertool", new Button("voeg toe"));
-
-    public void backToHome(MouseEvent mouseEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
-        rootPane.getChildren().setAll(pane);
+    private void buttonOnclick(ActionEvent event) {
+        shoppingcart.add(products.get(0));
+        System.out.println(shoppingcart);
     }
-
-    public void toShop(MouseEvent mouseEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ShoppingCartScreen.fxml"));
-        rootPane.getChildren().setAll(pane);
-    }
-
-    ObservableList<String> categorylist = FXCollections.observableArrayList(
-            wood.getCategory(), nail.getCategory()
-    );
-
-    ObservableList<Product> list = FXCollections.observableArrayList(
-           wood,nail
-    );
-
-    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
-    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        addButton.setOnAction(this::buttonOnclick);
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
@@ -110,4 +95,38 @@ public class ShopController implements Initializable {
             }
         });
     }
+
+    public Stage showShop(ObservableList<Product> shoppingcart) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/ShoppingCartScreen.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(loader.load()));
+        ShoppingCartController controller = loader.getController();
+        controller.initData(shoppingcart);
+        stage.show();
+        return stage;
+    }
+
+
+    private Product wood = new Product("wood", 2.00, "woodworking", addButton);
+    private Product nail = new Product("nail", 10.00, "powertool", addButton);
+
+    public void backToHome(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
+        rootPane.getChildren().setAll(pane);
+    }
+
+    public void toShop(MouseEvent mouseEvent) throws IOException {
+        showShop(shoppingcart);
+    }
+
+    ObservableList<String> categorylist = FXCollections.observableArrayList(
+            wood.getCategory(), nail.getCategory()
+    );
+
+    ObservableList<Product> list = FXCollections.observableArrayList(
+           wood,nail
+    );
+
+    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
+    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
 }

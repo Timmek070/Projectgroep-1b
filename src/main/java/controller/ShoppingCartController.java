@@ -3,36 +3,55 @@ package controller;
 import Account.User;
 import Webshop.Product;
 import Webshop.Receipt;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
-public class ShoppingCartController {
+public class ShoppingCartController implements Initializable {
     @FXML
-    private AnchorPane rootPane;
+    private Button closeButton;
     @FXML
     TextField receiptTextField;
     @FXML
-    TextArea bruh;
-    public void initialize(){
-        User ingelogdeUser = new User("gert","gertje","gertje@gmail.com","gert","m","25-09-2001","admin");
+    private TableView<Product> table;
 
-        ArrayList<Product> products = new ArrayList<>();
-        products.add(new Product("product1",2.10,"gaming", new Button("voeg toe")));
-        products.add(new Product("product2",Math.round(2.10 * 100.0) / 100.0,"gaming", new Button("voeg toe")));
+    @FXML
+    private TableColumn<Product, String> name;
 
-        Receipt receipt = new Receipt(products);
-        bruh.setText(receipt.getReceipt());
+    @FXML
+    private TableColumn<Product, Double> price;
+
+    @FXML
+    private TableColumn<Product, String> category;
+
+    @FXML
+    private TableColumn<Product, Button> button;
+
+    void initData(ObservableList<Product> shoppingcart){
+        name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
+        price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
+        category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
+        button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
+        table.setItems(shoppingcart);
     }
-    public void backToShop(MouseEvent mouseEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/ShopScreen.fxml"));
-        rootPane.getChildren().setAll(pane);
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) { }
+
+    @FXML
+    void closeShop(MouseEvent event) {
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
     }
 }
