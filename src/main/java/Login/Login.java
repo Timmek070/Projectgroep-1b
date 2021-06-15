@@ -57,10 +57,6 @@ public class Login {
         return ingelogdeUser;
     }
 
-    public void addUserDatabase(User user){
-        Database.getInstance().addUser(user);
-    }
-
     public void setLogout(){
         this.isLoggedIn = false;
         this.ingelogdeUser = null;
