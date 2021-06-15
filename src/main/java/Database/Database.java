@@ -1,13 +1,15 @@
 package Database;
 
 import Account.User;
+import Login.Login;
 
 import java.util.ArrayList;
 
 public class Database {
+    private static Database singleton = null;
     private ArrayList<User> Users;
 
-    public Database() {
+    private Database() {
         ArrayList<String> professions = new ArrayList<>();
         professions.add("woodworking");
         professions.add("painting");
@@ -36,6 +38,12 @@ public class Database {
 
     }
 
+    public static Database getInstance() {
+        if (singleton == null) {
+            singleton = new Database();
+        }
+        return singleton;
+    }
 
 
     public ArrayList<User> getUsers(){

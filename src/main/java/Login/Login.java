@@ -9,12 +9,11 @@ public class Login {
     private static Login singleton = null;
     private ArrayList<User> accounts;
     private Boolean isLoggedIn = false;
-    private Database database;
     private User ingelogdeUser;
 
 
     private Login() {
-        this.database = new Database();
+        Database.getInstance();
         this.accounts = new ArrayList<>();
     }
 
@@ -31,7 +30,7 @@ public class Login {
         System.out.println(password);
 
 
-        this.accounts = database.getUsers();
+        this.accounts = Database.getInstance().getUsers();
         for (int i = 0; i < this.accounts.size(); i++) {
             if (userExist(username, password)) {
                 this.isLoggedIn = true;
@@ -41,16 +40,13 @@ public class Login {
 
     }
     public Boolean userExist(String username,String password){
-        this.accounts = database.getUsers();
+        this.accounts = Database.getInstance().getUsers();
         for (int i = 0; i < this.accounts.size(); i++) {
             if (this.accounts.get(i).getUsername().equals(username) && this.accounts.get(i).getPassword().equals(password)){
                 return true;
             }
         }
         return false;
-    }
-    public Database getDatabase(){
-        return this.database;
     }
 
     public Boolean getLoggedIn() {
@@ -62,7 +58,7 @@ public class Login {
     }
 
     public void addUserDatabase(User user){
-        database.addUser(user);
+        Database.getInstance().addUser(user);
     }
 
     public void setLogout(){
