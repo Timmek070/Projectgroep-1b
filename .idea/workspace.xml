@@ -23,8 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Webshop/ReceiptTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Database/DatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +89,7 @@
       <recent name="Database" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReceiptTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="fxml-navigatie" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.LoginTest.addUserDatabase">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -100,6 +97,13 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="fxml-navigatie" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,6 +139,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.addUserDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxml-navigatie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Login" />
+      <option name="MAIN_CLASS_NAME" value="Login.LoginTest" />
+      <option name="METHOD_NAME" value="addUserDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReceiptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
       <extension name="coverage">
@@ -155,9 +175,11 @@
       <item itemvalue="JUnit.DatabaseTest" />
       <item itemvalue="JUnit.DatabaseTest.getUsers" />
       <item itemvalue="JUnit.ReceiptTest" />
+      <item itemvalue="JUnit.LoginTest.addUserDatabase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.addUserDatabase" />
         <item itemvalue="JUnit.ReceiptTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DatabaseTest" />

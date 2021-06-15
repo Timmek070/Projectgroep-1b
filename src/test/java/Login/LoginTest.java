@@ -22,12 +22,6 @@ class LoginTest {
     }
 
     @Test
-    void getDatabase() {
-        Database database = Login.getInstance().getDatabase();
-        assertEquals(database, Login.getInstance().getDatabase());
-    }
-
-    @Test
     void getLoggedIn() {
         Login.getInstance().setLogout();
         assertFalse(Login.getInstance().getLoggedIn());
@@ -36,7 +30,8 @@ class LoginTest {
     @Test
     void getIngelogdeUser() {
         Login.getInstance().startLogin("Admin","Admin");
-        ArrayList<User> users = Login.getInstance().getDatabase().getUsers();
+        ArrayList<User> users =  Database.getInstance().getUsers();
+
         for(User user : users){
             if(user.getUsername().equals("Admin")){
                 assertEquals(user, Login.getInstance().getIngelogdeUser());
@@ -47,8 +42,17 @@ class LoginTest {
     @Test
     void addUserDatabase() {
         User ken = new User("Ken", "Ken", "Admin@Admin.com", "Admin", "M","01011111", "User");
-        Login.getInstance().addUserDatabase(ken);
-        assertEquals(Login.getInstance().getDatabase(),Login.getInstance().getDatabase());
+        Database.getInstance().addUser(ken);
+        ArrayList<User> User =  Database.getInstance().getUsers();
+        Boolean testWorks = false;
+            for (int i = 0; i < User.size(); i++)
+            {
+                if(User.get(i).getUsername().equals(ken.getUsername())){
+                    testWorks = true;
+            }
+        }
+
+        assertEquals(true, testWorks);
     }
 
     @Test

@@ -8,12 +8,11 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DatabaseTest {
-    Database database = new Database();
 
     @Test
     void getUsers() {
         ArrayList<User> Users;
-        Users = database.getUsers();
+        Users = Database.getInstance().getUsers();
         String username;
         for (int i = 0; i < Users.size(); i++) {
             if (Users.get(i).getUsername() == "Admin") ;
