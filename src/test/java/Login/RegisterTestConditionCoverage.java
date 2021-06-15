@@ -10,11 +10,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RegisterTestConditionCoverage {
 
+    ArrayList<User> users = Database.getInstance().getUsers();
+
     @Test
     void registerUser1() {
         Register register = new Register();
         register.registerUser("kadmosb1","keesgerard","kadmosb1","Karel","Ja","Nee","ADMIN");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // all fields in registerUser are filled * 1 *
         assertNotEquals("", register.getUser().getUsername());
@@ -40,9 +41,8 @@ class RegisterTestConditionCoverage {
     void registerUser2() {
         Register register = new Register();
         register.registerUser("antonio","keesgerard","","","","","");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
-        // all fields in registerUser are not filled * 1 *
+        // all fields in registerUser are not filled * 0 *
         assertNotEquals("", register.getUser().getUsername());
         assertNotEquals("", register.getUser().getPassword());
         assertEquals("", register.getUser().getEmail());
@@ -51,10 +51,10 @@ class RegisterTestConditionCoverage {
         assertEquals("", register.getUser().getDateofbirth());
         assertEquals("", register.getUser().getType());
 
-        // password equals password * 0 *
+        // password equals password * 1 *
         assertEquals("keesgerard", register.getUser().getPassword());
 
-        // username is not unique * 1 *
+        // username is not unique * 0 *
         for (User user : users) {
             if (register.getUser().getUsername().equals(user.getUsername())) {
                 assertEquals(register.getUser().getUsername(), user.getUsername());
