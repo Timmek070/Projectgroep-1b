@@ -33,18 +33,6 @@ public class ShopController implements Initializable {
     private TableView<Product> table;
 
     @FXML
-    private TableColumn<Product, String> name;
-
-    @FXML
-    private TableColumn<Product, Double> price;
-
-    @FXML
-    private TableColumn<Product, String> category;
-
-    @FXML
-    private TableColumn<Product, Button> button;
-
-    @FXML
     private MenuItem woodworking;
 
     @FXML
@@ -55,6 +43,18 @@ public class ShopController implements Initializable {
     private MenuItem everything;
 
     private String productCategory;
+
+    @FXML
+    TableColumn<Product, String> name;
+
+    @FXML
+    TableColumn<Product, Double> price;
+
+    @FXML
+    TableColumn<Product, String> category;
+
+    @FXML
+    TableColumn<Product, Button> button;
 
     Button[] buttons = new Button[3];
 
