@@ -7,8 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ProductTest {
 
     String testCategory = "woodworking";
-    Button testButton = new Button("Voeg toe");
-    Product testProduct = new Product("plank", 3.0 , testCategory, testButton);
+    Product testProduct = new Product("plank", 3.0 , testCategory, new Button());
 
     @Test
     public void InitProductTest() {

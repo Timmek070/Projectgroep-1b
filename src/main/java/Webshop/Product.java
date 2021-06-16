@@ -14,6 +14,7 @@ public class Product {
         this.price = price;
         this.category = category;
         this.button = button;
+        this.button.setText("Add");
     }
 
     public Product (String name, double price, String category) {

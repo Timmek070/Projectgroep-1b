@@ -20,9 +20,11 @@ import java.util.ResourceBundle;
 
 public class ShoppingCartController implements Initializable {
     @FXML
-    private Button closeButton;
+    private AnchorPane rootPane;
+
     @FXML
-    TextField receiptTextField;
+    private Button closeButton;
+
     @FXML
     private TableView<Product> table;
 
@@ -36,14 +38,21 @@ public class ShoppingCartController implements Initializable {
     private TableColumn<Product, String> category;
 
     @FXML
-    private TableColumn<Product, Button> button;
+    TextArea bruh;
+
+    ArrayList<Product> products = new ArrayList<>();
 
     void initData(ObservableList<Product> shoppingcart){
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
-        button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
         table.setItems(shoppingcart);
+
+        for(Product product: shoppingcart){
+            products.add(product);
+        }
+
+        bruh.setVisible(false);
     }
 
     @Override
@@ -53,5 +62,12 @@ public class ShoppingCartController implements Initializable {
     void closeShop(MouseEvent event) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void printReceipt(MouseEvent mouseEvent) throws IOException {
+        bruh.setVisible(true);
+        Receipt receipt = new Receipt(products);
+
+        bruh.setText(receipt.getReceipt());
     }
 }

@@ -52,47 +52,63 @@ public class ShopController implements Initializable {
 
     private String productCategory;
 
-    Button addButton = new Button("Add");
+    Button[] buttons = new Button[3];
 
     private void buttonOnclick(ActionEvent event) {
-        shoppingcart.add(products.get(0));
-        System.out.println(shoppingcart);
+        if (event.getSource() == buttons[0]) {
+            shoppingcart.add(products.get(0));
+        }
+        else if (event.getSource() == buttons[1]) {
+            shoppingcart.add(products.get(1));
+        }
+        else if (event.getSource() == buttons[2]) {
+            shoppingcart.add(products.get(2));
+        }
     }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        addButton.setOnAction(this::buttonOnclick);
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
 
-        products.add(nail);
-        products.add(wood);
-        for (Product product : products){
-            if(product.getCategory().equals("powertool")){
-                powertoolList.add(product);
-            }
-        }
-        for (Product product : products){
-            if(product.getCategory().equals("woodworking")){
-                woodworkList.add(product);
-            }
-        }
-        table.setItems(list);
 
-        woodworking.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent t) {
-                table.setItems(woodworkList);
-            }
-        });
+        //Product wood = new Product("wood", 2.00, "woodworking", buttons[0]);
+        //Product nail = new Product("nail", 10.00, "powertool", buttons[1]);
 
-        powertools.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent actionEvent) {
-                table.setItems(powertoolList);
-            }
-        });
+//    ObservableList<String> categorylist = FXCollections.observableArrayList(
+//            wood.getCategory(), nail.getCategory()
+//    );
+
+//    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
+//    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
+//      products.add(nail);
+//      products.add(wood);
+
+//        woodworking.setOnAction(new EventHandler<ActionEvent>() {
+//            public void handle(ActionEvent t) {
+//                for (Product product : products){
+//                    if(product.getCategory().equals("woodworking")){
+//                        woodworkList.add(product);
+//                    }
+//                }
+//                table.setItems(woodworkList);
+//            }
+//        });
+//
+//        powertools.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent actionEvent) {
+//                for (Product product : products){
+//                    if(product.getCategory().equals("powertool")){
+//                        powertoolList.add(product);
+//                    }
+//                }
+//                table.setItems(powertoolList);
+//            }
+//        });
     }
 
     public Stage showShop(ObservableList<Product> shoppingcart) throws IOException {
@@ -106,9 +122,6 @@ public class ShopController implements Initializable {
     }
 
 
-    private Product wood = new Product("wood", 2.00, "woodworking", addButton);
-    private Product nail = new Product("nail", 10.00, "powertool", addButton);
-
     public void backToHome(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
         rootPane.getChildren().setAll(pane);
@@ -117,15 +130,4 @@ public class ShopController implements Initializable {
     public void toShop(MouseEvent mouseEvent) throws IOException {
         showShop(shoppingcart);
     }
-
-    ObservableList<String> categorylist = FXCollections.observableArrayList(
-            wood.getCategory(), nail.getCategory()
-    );
-
-    ObservableList<Product> list = FXCollections.observableArrayList(
-           wood,nail
-    );
-
-    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
-    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
 }
