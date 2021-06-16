@@ -18,7 +18,7 @@ class UserTest {
         assertEquals("1@gmail.com", u1.getEmail());
         assertEquals("Jordy", u1.getName());
         assertEquals("M", u1.getSex());
-        assertEquals("3-4-2001", u1.getDateofbirth());
+        assertEquals("3-4-2001", u1.getDateOfBirth());
         assertEquals("Admin", u1.getType());
         pl1.add("Software Engineer");
         assertEquals("Software Engineer", u1.getProfession().get(0));

@@ -25,7 +25,7 @@ class RegisterTestDecisionCoverage {
         assertEquals("", register.getUser().getEmail());
         assertEquals("", register.getUser().getName());
         assertEquals("", register.getUser().getSex());
-        assertEquals("", register.getUser().getDateofbirth());
+        assertEquals("", register.getUser().getDateOfBirth());
         assertEquals("", register.getUser().getType());
 
         // password not equals password * 0 *
@@ -50,7 +50,7 @@ class RegisterTestDecisionCoverage {
         assertNotEquals("", register.getUser().getEmail());
         assertNotEquals("", register.getUser().getName());
         assertNotEquals("", register.getUser().getSex());
-        assertNotEquals("", register.getUser().getDateofbirth());
+        assertNotEquals("", register.getUser().getDateOfBirth());
         assertNotEquals("", register.getUser().getType());
 
         // password equals password * 1 *

@@ -1,24 +1,6 @@
 package Webshop;
 
-import Webshop.Product;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.control.TableView;
 
-
-import Account.Communitybadge;
-import Account.User;
 import Login.Login;
 import org.junit.jupiter.api.Test;
 
@@ -55,16 +37,16 @@ class ReceiptTest {
         products.add(testProduct);
         Receipt testReceipt = new Receipt(products);
 
-        assertEquals(10.0, testReceipt.getTotaalKorting());
+        assertEquals(10.0, testReceipt.getTotalDiscount());
         Login.getInstance().getIngelogdeUser().addProfession("profession2");
-        assertEquals(9.5, testReceipt.getTotaalKorting());
+        assertEquals(9.5, testReceipt.getTotalDiscount());
         Login.getInstance().getIngelogdeUser().addProfession("profession3");
-        assertEquals(9.5, testReceipt.getTotaalKorting());
+        assertEquals(9.5, testReceipt.getTotalDiscount());
         Login.getInstance().getIngelogdeUser().addProfession("profession4");
-        assertEquals(9.0, testReceipt.getTotaalKorting());
+        assertEquals(9.0, testReceipt.getTotalDiscount());
         Login.getInstance().getIngelogdeUser().addProfession("profession5");
-        assertEquals(9.0, testReceipt.getTotaalKorting());
+        assertEquals(9.0, testReceipt.getTotalDiscount());
         Login.getInstance().getIngelogdeUser().addProfession("profession6");
-        assertEquals(8.5, testReceipt.getTotaalKorting());
+        assertEquals(8.5, testReceipt.getTotalDiscount());
     }
 }

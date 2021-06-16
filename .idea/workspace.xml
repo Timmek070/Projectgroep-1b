@@ -23,7 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Account/Communitybadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/Communitybadge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Account/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Login/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Login/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Webshop/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AccountDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AccountDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/RegisterTestConditionCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/RegisterTestConditionCoverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/RegisterTestDecisionCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/RegisterTestDecisionCoverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Login/RegisterTestMultipleConditionCoverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/RegisterTestMultipleConditionCoverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Webshop/ReceiptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Webshop/ReceiptTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +222,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="110" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623883292556">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="110" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1623883292556" />
     <state width="477" height="466" key="DebuggerActiveHint" timestamp="1623860260817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -281,21 +297,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Webshop/Receipt.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Webshop/Receipt.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Account/Communitybadge.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Login/LoginTest.java</url>

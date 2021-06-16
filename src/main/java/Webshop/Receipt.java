@@ -36,14 +36,14 @@ public class Receipt {
         return bon;
     }
 
-    public double getTotaalKorting(){
-        double totaalPrijsExclKorting=0.00;
+    public double getTotalDiscount(){
+        double totalPriceExclDiscount=0.00;
         for(Product product :products){
-            totaalPrijsExclKorting=Math.round((totaalPrijsExclKorting+ product.getPrice()) * 100.0) / 100.0;
+            totalPriceExclDiscount=Math.round((totalPriceExclDiscount+ product.getPrice()) * 100.0) / 100.0;
         }
-        double korting=Math.round((buyer.getBadge().getDiscount()*totaalPrijsExclKorting) * 100.0) / 100.0;
-        double totaalPrijsInclKorting =Math.round((totaalPrijsExclKorting-korting) * 100.0) / 100.0;
-        return totaalPrijsInclKorting;
+        double discount=Math.round((buyer.getBadge().getDiscount()*totalPriceExclDiscount) * 100.0) / 100.0;
+        double totalPriceInclDiscount =Math.round((totalPriceExclDiscount-discount) * 100.0) / 100.0;
+        return totalPriceInclDiscount;
     }
 
 }

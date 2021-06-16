@@ -1,22 +1,18 @@
 package Account;
 
-import Login.Login;
-
-import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
 public class Communitybadge implements Observer {
 
     private String rank;
-    private ArrayList<String> professions;
     private double discount;
-    private User user;
+    private User hasBadge;
 
 
     public Communitybadge(User user ){
-        this.user = user;
-        user.addObserver(this);
+        this.hasBadge = user;
+        hasBadge.addObserver(this);
 
     }
 

@@ -25,7 +25,7 @@ class RegisterTestMultipleConditionCoverage {
         assertNotEquals("", user1.getUser().getEmail());
         assertNotEquals("", user1.getUser().getName());
         assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateofbirth());
+        assertNotEquals("", user1.getUser().getDateOfBirth());
         assertNotEquals("", user1.getUser().getType());
 
         // Passwords match
@@ -53,7 +53,7 @@ class RegisterTestMultipleConditionCoverage {
         assertNotEquals("", user1.getUser().getEmail());
         assertNotEquals("", user1.getUser().getName());
         assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateofbirth());
+        assertNotEquals("", user1.getUser().getDateOfBirth());
         assertNotEquals("", user1.getUser().getType());
 
         // Passwords match
@@ -81,7 +81,7 @@ class RegisterTestMultipleConditionCoverage {
         assertNotEquals("", user1.getUser().getEmail());
         assertNotEquals("", user1.getUser().getName());
         assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateofbirth());
+        assertNotEquals("", user1.getUser().getDateOfBirth());
         assertNotEquals("", user1.getUser().getType());
 
         // Passwords dont match
@@ -109,7 +109,7 @@ class RegisterTestMultipleConditionCoverage {
         assertEquals("", user1.getUser().getEmail());
         assertEquals("", user1.getUser().getName());
         assertEquals("", user1.getUser().getSex());
-        assertEquals("", user1.getUser().getDateofbirth());
+        assertEquals("", user1.getUser().getDateOfBirth());
         assertEquals("", user1.getUser().getType());
 
         // Passwords dont match
@@ -138,7 +138,7 @@ class RegisterTestMultipleConditionCoverage {
         assertEquals("", user1.getUser().getEmail());
         assertEquals("", user1.getUser().getName());
         assertEquals("", user1.getUser().getSex());
-        assertEquals("", user1.getUser().getDateofbirth());
+        assertEquals("", user1.getUser().getDateOfBirth());
         assertEquals("", user1.getUser().getType());
 
         // Passwords dont match
@@ -166,7 +166,7 @@ class RegisterTestMultipleConditionCoverage {
         assertEquals("", user1.getUser().getEmail());
         assertEquals("", user1.getUser().getName());
         assertEquals("", user1.getUser().getSex());
-        assertEquals("", user1.getUser().getDateofbirth());
+        assertEquals("", user1.getUser().getDateOfBirth());
         assertEquals("", user1.getUser().getType());
 
         // Passwords match

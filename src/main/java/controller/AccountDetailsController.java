@@ -1,11 +1,9 @@
 package controller;
 
-import Account.User;
 import Login.Login;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
@@ -53,7 +51,7 @@ public class AccountDetailsController implements Initializable {
         usernameText.setText(Login.getInstance().getIngelogdeUser().getUsername());
         nameText.setText(Login.getInstance().getIngelogdeUser().getName());
         sexText.setText(Login.getInstance().getIngelogdeUser().getSex());
-        birthDateText.setText(Login.getInstance().getIngelogdeUser().getDateofbirth());
+        birthDateText.setText(Login.getInstance().getIngelogdeUser().getDateOfBirth());
         roleText.setText(Login.getInstance().getIngelogdeUser().getType());
         badgeText.setText(Login.getInstance().getIngelogdeUser().getBadge().getRank());
         numberOfProfessionsText.setText("" + Login.getInstance().getIngelogdeUser().getProfession().size());
