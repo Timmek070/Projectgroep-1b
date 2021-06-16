@@ -10,7 +10,7 @@ public class Communitybadge implements Observer {
 
     private String rank;
     private ArrayList<String> professions;
-    private double discount = 0.0;
+    private double discount;
     private User user;
 
 
@@ -34,13 +34,16 @@ public class Communitybadge implements Observer {
         int a = (int)arg;
         if (a >= 6) {
             this.rank ="Gold";
+            this.discount=0.15;
         }
         else if (a >= 4) {
             this.rank ="Silver";
+            this.discount=0.10;
 
         }
         else if (a >= 2) {
             this.rank = "Bronze";
+            this.discount=0.05;
 
         }
         else {
