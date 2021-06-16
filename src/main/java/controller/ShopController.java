@@ -70,13 +70,6 @@ public class ShopController implements Initializable {
         }
     }
 
-    //Product wood = new Product("wood", 2.00, "woodworking", buttons[0]);
-    //Product nail = new Product("nail", 10.00, "powertool", buttons[1]);
-
-//    ObservableList<String> categorylist = FXCollections.observableArrayList(
-//            wood.getCategory(), nail.getCategory()
-//    );
-
     ObservableList<Product> woodworkList = FXCollections.observableArrayList();
     ObservableList<Product> powertoolList = FXCollections.observableArrayList();
     ObservableList<Product> foodList = FXCollections.observableArrayList();
@@ -98,17 +91,15 @@ public class ShopController implements Initializable {
         products.add(new Product("dirty water", 10.00, "food", buttons[2]));
 
         table.setItems(products);
-        for (Product product : products){
-            if(product.getCategory().equals("powertool")){
+
+        for (Product product : products) {
+            if (product.getCategory().equals("powertool")) {
                 powertoolList.add(product);
             }
-        }for (Product product : products){
-            if(product.getCategory().equals("food")){
+            if (product.getCategory().equals("food")) {
                 foodList.add(product);
             }
-        }
-        for (Product product : products){
-            if(product.getCategory().equals("woodworking")){
+            if (product.getCategory().equals("woodworking")) {
                 woodworkList.add(product);
             }
         }

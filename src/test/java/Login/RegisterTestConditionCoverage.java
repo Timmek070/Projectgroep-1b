@@ -40,16 +40,18 @@ class RegisterTestConditionCoverage {
     @Test
     void registerUser2() {
         Register register = new Register();
-        register.registerUser("antonio","keesgerard","","","","","");
+        Register emptyuser = new Register();
+        register.registerUser("kadmosb1","keesgerard","kadmosb1","Karel","Ja","Nee","ADMIN");
+        emptyuser.registerUser("","","","","","","");
 
         // all fields in registerUser are not filled * 0 *
-        assertNotEquals("", register.getUser().getUsername());
-        assertNotEquals("", register.getUser().getPassword());
-        assertEquals("", register.getUser().getEmail());
-        assertEquals("", register.getUser().getName());
-        assertEquals("", register.getUser().getSex());
-        assertEquals("", register.getUser().getDateofbirth());
-        assertEquals("", register.getUser().getType());
+        assertEquals("", emptyuser.getUser().getUsername());
+        assertEquals("", emptyuser.getUser().getPassword());
+        assertEquals("", emptyuser.getUser().getEmail());
+        assertEquals("", emptyuser.getUser().getName());
+        assertEquals("", emptyuser.getUser().getSex());
+        assertEquals("", emptyuser.getUser().getDateofbirth());
+        assertEquals("", emptyuser.getUser().getType());
 
         // password equals password * 1 *
         assertEquals("keesgerard", register.getUser().getPassword());
