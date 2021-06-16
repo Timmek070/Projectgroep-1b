@@ -11,10 +11,10 @@ public class Communitybadge {
         if (this.rank.equals("Gold")) {
             this.discount = 0.15;
         }
-        if (rank.equals("Silver")) {
+        else if (rank.equals("Silver")) {
             this.discount = 0.1;
         }
-        if (rank.equals ("Bronze")) {
+        else if (rank.equals ("Bronze")) {
             this.discount = 0.05;
         }
         else {

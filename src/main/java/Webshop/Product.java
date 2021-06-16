@@ -16,6 +16,12 @@ public class Product {
         this.button = button;
     }
 
+    public Product (String name, double price, String category) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+
     public String getName(){
         return name;
     }
