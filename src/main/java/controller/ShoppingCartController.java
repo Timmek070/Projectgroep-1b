@@ -38,13 +38,21 @@ public class ShoppingCartController implements Initializable {
     private TableColumn<Product, String> category;
 
     @FXML
-    private TableColumn<Product, Button> button;
+    TextArea bruh;
+
+    ArrayList<Product> products = new ArrayList<>();
 
     void initData(ObservableList<Product> shoppingcart){
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         table.setItems(shoppingcart);
+
+        for(Product product: shoppingcart){
+            products.add(product);
+        }
+
+        bruh.setVisible(false);
     }
 
     @Override
@@ -57,7 +65,9 @@ public class ShoppingCartController implements Initializable {
     }
 
     public void printReceipt(MouseEvent mouseEvent) throws IOException {
-        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/Receipt.fxml"));
-        rootPane.getChildren().setAll(pane);
+        bruh.setVisible(true);
+        Receipt receipt = new Receipt(products);
+
+        bruh.setText(receipt.getReceipt());
     }
 }

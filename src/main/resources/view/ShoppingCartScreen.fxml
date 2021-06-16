@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -21,6 +22,12 @@
             </font>
         </Label>
         <Button fx:id="closeButton" layoutX="20.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#closeShop" prefHeight="42.0" prefWidth="141.0" text="Back to shop">
+            <font>
+                <Font name="Corbel" size="15.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="printReceipt" layoutX="197.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#printReceipt" prefHeight="42.0" prefWidth="141.0" text="Print Receipt">
             <font>
                 <Font name="Corbel" size="15.0" />
             </font>
@@ -43,10 +50,6 @@
                 <TableColumn fx:id="button" prefWidth="82.0" resizable="false" />
             </columns>
         </TableView>
-      <Button fx:id="toReceipt" layoutX="176.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#printReceipt" prefHeight="42.0" prefWidth="141.0" text="Print receipt">
-         <font>
-            <Font name="Corbel" size="15.0" />
-         </font>
-      </Button>
+        <TextArea fx:id="bruh" layoutX="200.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
     </children>
 </AnchorPane>
