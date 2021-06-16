@@ -44,7 +44,6 @@ public class ShoppingCartController implements Initializable {
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
-        button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
         table.setItems(shoppingcart);
     }
 
