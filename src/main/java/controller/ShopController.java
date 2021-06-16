@@ -1,5 +1,6 @@
 package controller;
 
+import Database.Database;
 import Webshop.Product;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,11 +20,13 @@ import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ShopController implements Initializable {
     private ObservableList<Product> products = FXCollections.observableArrayList();
-
+    private ArrayList<Product> productsDB = Database.getInstance().getProducts();
+    private ArrayList<String> productsCategory = new ArrayList<>();
     private ObservableList<Product> shoppingcart = FXCollections.observableArrayList();
 
     @FXML
@@ -54,6 +57,8 @@ public class ShopController implements Initializable {
 
     Button addButton = new Button("Add");
 
+    ObservableList<Product> list = FXCollections.observableArrayList(products);
+
     private void buttonOnclick(ActionEvent event) {
         shoppingcart.add(products.get(0));
         System.out.println(shoppingcart);
@@ -67,13 +72,19 @@ public class ShopController implements Initializable {
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
 
-        products.add(nail);
-        products.add(wood);
+        for(Product product : productsDB){
+            products.add(product);
+        }
+
+        for (Product product : productsDB){
+            productsCategory.add(product.getCategory());
+        }
 
         table.setItems(list);
 
         woodworking.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent t) {
+                woodworkList.clear();
                 for (Product product : products){
                     if(product.getCategory().equals("woodworking")){
                         woodworkList.add(product);
@@ -86,6 +97,7 @@ public class ShopController implements Initializable {
         powertools.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                powertoolList.clear();
                 for (Product product : products){
                     if(product.getCategory().equals("powertool")){
                         powertoolList.add(product);
@@ -106,10 +118,6 @@ public class ShopController implements Initializable {
         return stage;
     }
 
-
-    private Product wood = new Product("wood", 2.00, "woodworking", addButton);
-    private Product nail = new Product("nail", 10.00, "powertool", addButton);
-
     public void backToHome(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
         rootPane.getChildren().setAll(pane);
@@ -119,13 +127,8 @@ public class ShopController implements Initializable {
         showShop(shoppingcart);
     }
 
-    ObservableList<String> categorylist = FXCollections.observableArrayList(
-            wood.getCategory(), nail.getCategory()
-    );
+    ObservableList<String> categorylist = FXCollections.observableArrayList(productsCategory);
 
-    ObservableList<Product> list = FXCollections.observableArrayList(
-           wood,nail
-    );
 
     ObservableList<Product> woodworkList = FXCollections.observableArrayList();
     ObservableList<Product> powertoolList = FXCollections.observableArrayList();
