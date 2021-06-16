@@ -23,7 +23,7 @@ class RegisterTestConditionCoverage {
         assertNotEquals("", register.getUser().getEmail());
         assertNotEquals("", register.getUser().getName());
         assertNotEquals("", register.getUser().getSex());
-        assertNotEquals("", register.getUser().getDateofbirth());
+        assertNotEquals("", register.getUser().getDateOfBirth());
         assertNotEquals("", register.getUser().getType());
 
         // password not equals password * 0 *
@@ -50,7 +50,7 @@ class RegisterTestConditionCoverage {
         assertEquals("", emptyuser.getUser().getEmail());
         assertEquals("", emptyuser.getUser().getName());
         assertEquals("", emptyuser.getUser().getSex());
-        assertEquals("", emptyuser.getUser().getDateofbirth());
+        assertEquals("", emptyuser.getUser().getDateOfBirth());
         assertEquals("", emptyuser.getUser().getType());
 
         // password equals password * 1 *
