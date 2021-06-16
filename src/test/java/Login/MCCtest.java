@@ -86,10 +86,10 @@ class MCCtest {
         assertNotEquals("", user1.getUser().getDateofbirth());
         assertNotEquals("", user1.getUser().getType());
 
-        // Passwords match
+        // Passwords dont match
         assertNotEquals("wrongPassword", user1.getUser().getPassword());
 
-        // username is unique
+        // username is not unique
         for (User user : users) {
             if (user1.getUser().getUsername().equals(user.getUsername())) {
                 assertEquals(user1.getUser().getUsername(), user.getUsername());
@@ -106,7 +106,7 @@ class MCCtest {
         user1.registerUser("","","","","","","");
         ArrayList<User> users = Database.getInstance().getUsers();
 
-        // fields are filled in
+        // fields are not filled in
         assertEquals("", user1.getUser().getUsername());
         assertEquals("", user1.getUser().getPassword());
         assertEquals("", user1.getUser().getEmail());
@@ -115,10 +115,10 @@ class MCCtest {
         assertEquals("", user1.getUser().getDateofbirth());
         assertEquals("", user1.getUser().getType());
 
-        // Passwords match
+        // Passwords dont match
         assertNotEquals("wrongPassword", user1.getUser().getPassword());
 
-        // username is unique
+        // username is not unique
         for (User user : users) {
             if (user1.getUser().getUsername().equals(user.getUsername())) {
                 assertEquals(user1.getUser().getUsername(), user.getUsername());
@@ -136,7 +136,7 @@ class MCCtest {
         user1.registerUser("","","","","","","");
         ArrayList<User> users = Database.getInstance().getUsers();
 
-        // fields are filled in
+        // fields are not filled in
         assertEquals("", user1.getUser().getUsername());
         assertEquals("", user1.getUser().getPassword());
         assertEquals("", user1.getUser().getEmail());
@@ -145,7 +145,7 @@ class MCCtest {
         assertEquals("", user1.getUser().getDateofbirth());
         assertEquals("", user1.getUser().getType());
 
-        // Passwords match
+        // Passwords dont match
         assertNotEquals("wrongPassword", user1.getUser().getPassword());
 
         // username is unique
@@ -165,7 +165,7 @@ class MCCtest {
         user1.registerUser("","","","","","","");
         ArrayList<User> users = Database.getInstance().getUsers();
 
-        // fields are filled in
+        // fields are not filled in
         assertEquals("", user1.getUser().getUsername());
         assertEquals("", user1.getUser().getPassword());
         assertEquals("", user1.getUser().getEmail());
