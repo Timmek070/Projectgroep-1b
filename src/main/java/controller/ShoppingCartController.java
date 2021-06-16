@@ -38,12 +38,22 @@ public class ShoppingCartController implements Initializable {
     @FXML
     private TableColumn<Product, Button> button;
 
+    @FXML
+    private TextField bruh;
+
+    private ArrayList<Product> products = new ArrayList<>();
     void initData(ObservableList<Product> shoppingcart){
-        name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
-        price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
-        category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
-        button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
-        table.setItems(shoppingcart);
+//        name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
+//        price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
+//        category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
+//        button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
+//        table.setItems(shoppingcart);
+        for(Product product: shoppingcart){
+            products.add(product);
+        }
+        Receipt receipt =new Receipt(products);
+
+        bruh.setText(receipt.getReceipt());
     }
 
     @Override
