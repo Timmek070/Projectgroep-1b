@@ -27,6 +27,7 @@ public class Receipt {
         double korting=Math.round((buyer.getBadge().getDiscount()*totaalPrijsExclKorting) * 100.0) / 100.0;
         double totaalPrijsInclKorting =Math.round((totaalPrijsExclKorting-korting) * 100.0) / 100.0;
 
+
         bon+= "\n";
         bon+= "Korting percentage: "+buyer.getBadge().getDiscount()*100+"% \n";
         bon+= "Korting: €"+korting+"\n\n";
@@ -34,4 +35,15 @@ public class Receipt {
         bon+= "Prijs incl. korting: €"+totaalPrijsInclKorting+"\n";
         return bon;
     }
+
+    public double getTotaalKorting(){
+        double totaalPrijsExclKorting=0.00;
+        for(Product product :products){
+            totaalPrijsExclKorting=Math.round((totaalPrijsExclKorting+ product.getPrice()) * 100.0) / 100.0;
+        }
+        double korting=Math.round((buyer.getBadge().getDiscount()*totaalPrijsExclKorting) * 100.0) / 100.0;
+        double totaalPrijsInclKorting =Math.round((totaalPrijsExclKorting-korting) * 100.0) / 100.0;
+        return totaalPrijsInclKorting;
+    }
+
 }
