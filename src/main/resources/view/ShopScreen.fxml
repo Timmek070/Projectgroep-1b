@@ -36,7 +36,7 @@
             <MenuItem fx:id="everything" mnemonicParsing="false" text="Everything" />
             <MenuItem fx:id="woodworking" mnemonicParsing="false" text="woodworking" />
             <MenuItem fx:id="powertools" mnemonicParsing="false" text="power tools" />
-            <MenuItem fx:id="food" mnemonicParsing="false" text="vreten" />
+            <MenuItem fx:id="food" mnemonicParsing="false" text="food" />
          </items>
       </MenuButton>
       <TableView fx:id="table" layoutX="40.0" layoutY="114.0" prefHeight="200.0" prefWidth="431.0">

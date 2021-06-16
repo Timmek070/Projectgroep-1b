@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class LoginController implements Initializable {
+public class LoginController{
 
     public Text foutmeldingText;
     @FXML
@@ -45,10 +45,5 @@ public class LoginController implements Initializable {
     public void home(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
         rootPane.getChildren().setAll(pane);
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Punt om data op te halen.
     }
 }
