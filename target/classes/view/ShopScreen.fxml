@@ -33,8 +33,10 @@
       </Text>
       <MenuButton layoutX="492.0" layoutY="114.0" mnemonicParsing="false" text="Categories">
          <items>
+            <MenuItem fx:id="everything" mnemonicParsing="false" text="Everything" />
             <MenuItem fx:id="woodworking" mnemonicParsing="false" text="woodworking" />
             <MenuItem fx:id="powertools" mnemonicParsing="false" text="power tools" />
+            <MenuItem fx:id="food" mnemonicParsing="false" text="vreten" />
          </items>
       </MenuButton>
       <TableView fx:id="table" layoutX="40.0" layoutY="114.0" prefHeight="200.0" prefWidth="431.0">

@@ -49,6 +49,10 @@ public class ShopController implements Initializable {
 
     @FXML
     private MenuItem powertools;
+    @FXML
+    private MenuItem food;
+    @FXML
+    private MenuItem everything;
 
     private String productCategory;
 
@@ -73,8 +77,9 @@ public class ShopController implements Initializable {
 //            wood.getCategory(), nail.getCategory()
 //    );
 
-//    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
-//    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
+    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
+    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
+    ObservableList<Product> foodList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -93,32 +98,47 @@ public class ShopController implements Initializable {
         products.add(new Product("dirty water", 10.00, "food", buttons[2]));
 
         table.setItems(products);
+        for (Product product : products){
+            if(product.getCategory().equals("powertool")){
+                powertoolList.add(product);
+            }
+        }for (Product product : products){
+            if(product.getCategory().equals("food")){
+                foodList.add(product);
+            }
+        }
+        for (Product product : products){
+            if(product.getCategory().equals("woodworking")){
+                woodworkList.add(product);
+            }
+        }
+        woodworking.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent t) {
 
-        //products.add(nail);
-        //products.add(wood);
+                table.setItems(woodworkList);
+            }
+        });
+        everything.setOnAction(new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent t) {
 
-//        woodworking.setOnAction(new EventHandler<ActionEvent>() {
-//            public void handle(ActionEvent t) {
-//                for (Product product : products){
-//                    if(product.getCategory().equals("woodworking")){
-//                        woodworkList.add(product);
-//                    }
-//                }
-//                table.setItems(woodworkList);
-//            }
-//        });
-//
-//        powertools.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent actionEvent) {
-//                for (Product product : products){
-//                    if(product.getCategory().equals("powertool")){
-//                        powertoolList.add(product);
-//                    }
-//                }
-//                table.setItems(powertoolList);
-//            }
-//        });
+                table.setItems(products);
+            }
+        });
+
+        powertools.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+
+                table.setItems(powertoolList);
+            }
+        });
+        food.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+
+                table.setItems(foodList);
+            }
+        });
     }
 
     public Stage showShop(ObservableList<Product> shoppingcart) throws IOException {
