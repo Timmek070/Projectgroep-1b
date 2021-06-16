@@ -33,18 +33,6 @@ public class ShopController implements Initializable {
     private TableView<Product> table;
 
     @FXML
-    private TableColumn<Product, String> name;
-
-    @FXML
-    private TableColumn<Product, Double> price;
-
-    @FXML
-    private TableColumn<Product, String> category;
-
-    @FXML
-    private TableColumn<Product, Button> button;
-
-    @FXML
     private MenuItem woodworking;
 
     @FXML
@@ -55,6 +43,18 @@ public class ShopController implements Initializable {
     private MenuItem everything;
 
     private String productCategory;
+
+    @FXML
+    TableColumn<Product, String> productName;
+
+    @FXML
+    TableColumn<Product, Double> price;
+
+    @FXML
+    TableColumn<Product, String> category;
+
+    @FXML
+    TableColumn<Product, Button> button;
 
     Button[] buttons = new Button[3];
 
@@ -76,7 +76,7 @@ public class ShopController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
+        productName.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
@@ -88,7 +88,7 @@ public class ShopController implements Initializable {
 
         products.add(new Product("wood", 2.00, "woodworking", buttons[0]));
         products.add(new Product("nail", 10.00, "powertool", buttons[1]));
-        products.add(new Product("dirty water", 10.00, "food", buttons[2]));
+        products.add(new Product("water", 10.00, "food", buttons[2]));
 
         table.setItems(products);
 

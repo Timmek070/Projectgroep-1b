@@ -18,18 +18,6 @@ public class AccountDetailsController implements Initializable {
     @FXML
     private AnchorPane rootPane;
     @FXML
-    TextField emailField;
-    @FXML
-    TextField usernameField;
-    @FXML
-    TextField nameField;
-    @FXML
-    TextField sexField;
-    @FXML
-    TextField birthdateField;
-    @FXML
-    TextField roleField;
-    @FXML
     Text emailText;
     @FXML
     Text usernameText;

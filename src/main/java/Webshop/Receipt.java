@@ -17,8 +17,8 @@ public class Receipt {
     public String getReceipt(){
         String bon="";
         double totaalPrijsExclKorting=0.00;
-        bon+= "Naam koper: \n"+bon+buyer.getName()+"\n\n";
-        bon+= "Producten: \n\n";
+        bon+= "Name buyer: \n"+bon+buyer.getName()+"\n\n";
+        bon+= "Products: \n\n";
         for(Product product :products){
             totaalPrijsExclKorting=Math.round((totaalPrijsExclKorting+ product.getPrice()) * 100.0) / 100.0;
             bon+= product.getName()+ " €"+Math.round(product.getPrice() * 100.0) / 100.0+"\n";
@@ -29,10 +29,10 @@ public class Receipt {
 
 
         bon+= "\n";
-        bon+= "Korting percentage: "+buyer.getBadge().getDiscount()*100+"% \n";
-        bon+= "Korting: €"+korting+"\n\n";
-        bon+= "Prijs excl. korting: €"+totaalPrijsExclKorting+"\n";
-        bon+= "Prijs incl. korting: €"+totaalPrijsInclKorting+"\n";
+        bon+= "Discount percentage: "+buyer.getBadge().getDiscount()*100+"% \n";
+        bon+= "Discount: €"+korting+"\n\n";
+        bon+= "Price excl. discount: €"+totaalPrijsExclKorting+"\n";
+        bon+= "Price incl. discount: €"+totaalPrijsInclKorting+"\n";
         return bon;
     }
 
