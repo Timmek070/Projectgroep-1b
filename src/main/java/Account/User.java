@@ -26,18 +26,24 @@ public class User extends Account {
     }
 
     public void addProfession (String profession) {
-        Profession.add(profession);
-        updateBadge();
+        if (!profession.equals("Villager")) {
+            Profession.add(profession);
+            updateBadge();
+        }
     }
 
     public void removeProfessionByName (String profession) {
-        for (int i=0; i <Profession.size(); i++) {
-            String professionCheck = Profession.get(i);
-            if (profession.equals(professionCheck)){
-                Profession.remove(i);
+        if (!profession.equals("Villager")) {
+
+
+            for (int i=0; i <Profession.size(); i++) {
+                String professionCheck = Profession.get(i);
+                if (profession.equals(professionCheck)) {
+                    Profession.remove(i);
+                }
             }
+            updateBadge();
         }
-        updateBadge();
     }
 
     public String getUsername() {

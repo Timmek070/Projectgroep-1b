@@ -35,6 +35,7 @@ public class Login {
             if (userExist(username, password)) {
                 this.isLoggedIn = true;
                 this.ingelogdeUser = this.accounts.get(i);
+                break;
             }
         }
 
