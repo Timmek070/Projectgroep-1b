@@ -66,6 +66,15 @@ public class ShopController implements Initializable {
         }
     }
 
+    //Product wood = new Product("wood", 2.00, "woodworking", buttons[0]);
+    //Product nail = new Product("nail", 10.00, "powertool", buttons[1]);
+
+//    ObservableList<String> categorylist = FXCollections.observableArrayList(
+//            wood.getCategory(), nail.getCategory()
+//    );
+
+//    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
+//    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -74,18 +83,19 @@ public class ShopController implements Initializable {
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
         button.setCellValueFactory(new PropertyValueFactory<Product, Button>("button"));
 
+        for (int i = 0; i < buttons.length; i++){
+            buttons[i] = new Button();
+            buttons[i].setOnAction(this::buttonOnclick);
+        }
 
-        //Product wood = new Product("wood", 2.00, "woodworking", buttons[0]);
-        //Product nail = new Product("nail", 10.00, "powertool", buttons[1]);
+        products.add(new Product("wood", 2.00, "woodworking", buttons[0]));
+        products.add(new Product("nail", 10.00, "powertool", buttons[1]));
+        products.add(new Product("dirty water", 10.00, "food", buttons[2]));
 
-//    ObservableList<String> categorylist = FXCollections.observableArrayList(
-//            wood.getCategory(), nail.getCategory()
-//    );
+        table.setItems(products);
 
-//    ObservableList<Product> woodworkList = FXCollections.observableArrayList();
-//    ObservableList<Product> powertoolList = FXCollections.observableArrayList();
-//      products.add(nail);
-//      products.add(wood);
+        //products.add(nail);
+        //products.add(wood);
 
 //        woodworking.setOnAction(new EventHandler<ActionEvent>() {
 //            public void handle(ActionEvent t) {
