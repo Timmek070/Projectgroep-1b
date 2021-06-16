@@ -20,9 +20,11 @@ import java.util.ResourceBundle;
 
 public class ShoppingCartController implements Initializable {
     @FXML
-    private Button closeButton;
+    private AnchorPane rootPane;
+
     @FXML
-    TextField receiptTextField;
+    private Button closeButton;
+
     @FXML
     private TableView<Product> table;
 
@@ -53,5 +55,10 @@ public class ShoppingCartController implements Initializable {
     void closeShop(MouseEvent event) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void printReceipt(MouseEvent mouseEvent) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/Receipt.fxml"));
+        rootPane.getChildren().setAll(pane);
     }
 }

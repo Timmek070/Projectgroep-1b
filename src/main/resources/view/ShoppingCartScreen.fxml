@@ -43,5 +43,10 @@
                 <TableColumn fx:id="button" prefWidth="82.0" resizable="false" />
             </columns>
         </TableView>
+      <Button fx:id="toReceipt" layoutX="176.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#printReceipt" prefHeight="42.0" prefWidth="141.0" text="Print receipt">
+         <font>
+            <Font name="Corbel" size="15.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
