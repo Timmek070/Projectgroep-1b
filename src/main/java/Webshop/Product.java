@@ -9,11 +9,11 @@ public class Product {
     private String category;
     private Button button;
 
-    public Product(String name, Double price, String category, Button button){
+    public Product(String name, Double price, String category){
         this.name = name;
         this.price = price;
         this.category = category;
-        this.button = button;
+        this.button = new Button("Add");
     }
 
     public String getName(){

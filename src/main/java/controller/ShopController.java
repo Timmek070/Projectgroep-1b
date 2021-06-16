@@ -52,8 +52,6 @@ public class ShopController implements Initializable {
 
     private String productCategory;
 
-    Button addButton = new Button("Add");
-
     private void buttonOnclick(ActionEvent event) {
         shoppingcart.add(products.get(0));
         System.out.println(shoppingcart);
@@ -61,7 +59,7 @@ public class ShopController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        addButton.setOnAction(this::buttonOnclick);
+        //setOnAction(this::buttonOnclick);
         name.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         price.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
         category.setCellValueFactory(new PropertyValueFactory<Product, String>("category"));
@@ -107,8 +105,9 @@ public class ShopController implements Initializable {
     }
 
 
-    private Product wood = new Product("wood", 2.00, "woodworking", addButton);
-    private Product nail = new Product("nail", 10.00, "powertool", addButton);
+    private Product wood = new Product("wood", 2.00, "woodworking");
+    private Product nail = new Product("nail", 10.00, "powertool");
+
 
     public void backToHome(MouseEvent mouseEvent) throws IOException {
         AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/HomeScreen.fxml"));
