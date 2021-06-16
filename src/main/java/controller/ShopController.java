@@ -69,16 +69,20 @@ public class ShopController implements Initializable {
 
         products.add(nail);
         products.add(wood);
-
+        for (Product product : products){
+            if(product.getCategory().equals("powertool")){
+                powertoolList.add(product);
+            }
+        }
+        for (Product product : products){
+            if(product.getCategory().equals("woodworking")){
+                woodworkList.add(product);
+            }
+        }
         table.setItems(list);
 
         woodworking.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent t) {
-                for (Product product : products){
-                    if(product.getCategory().equals("woodworking")){
-                        woodworkList.add(product);
-                    }
-                }
                 table.setItems(woodworkList);
             }
         });
@@ -86,11 +90,6 @@ public class ShopController implements Initializable {
         powertools.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                for (Product product : products){
-                    if(product.getCategory().equals("powertool")){
-                        powertoolList.add(product);
-                    }
-                }
                 table.setItems(powertoolList);
             }
         });
