@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Login/MCCtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login/MCCtest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d4391de-8ec0-4720-a77c-232c0b409887" name="Default Changelist" comment="feature-MCC-test + tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,19 +90,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MCCtest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MCCtest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fxml-navigatie" />
       <extension name="coverage">
@@ -218,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623785239478</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feature-MCC-test + tests">
+      <created>1623789330721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623789330721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +226,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feature-MCC-test created" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature-MCC-test created" />
+    <MESSAGE value="feature-MCC-test + tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature-MCC-test + tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
