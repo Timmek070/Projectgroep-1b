@@ -59,10 +59,7 @@ public class AccountDetailsController implements Initializable {
 
     public void getDetails () {
 
-//        String badge = "";
-//        if (Login.getInstance().getIngelogdeUser().getBadge().getRank() != null) {
-//            badge = Login.getInstance().getIngelogdeUser().getBadge().getRank();
-//        }
+
 
         emailText.setText(Login.getInstance().getIngelogdeUser().getEmail());
         usernameText.setText(Login.getInstance().getIngelogdeUser().getUsername());
