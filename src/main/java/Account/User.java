@@ -31,22 +31,26 @@ public class User extends Observable{
     }
 
     public void addProfession (String profession) {
-        Profession.add(profession);
-        setChanged();
-        notifyObservers(Profession.size());
-        System.out.println(badge.getRank());
+        if (!profession.equals("Villager")) {
+            Profession.add(profession);
+            setChanged();
+            notifyObservers(Profession.size());
+            System.out.println(badge.getRank());
+        }
     }
 
     public void removeProfessionByName (String profession) {
-        for (int i=0; i <Profession.size(); i++) {
-            String professionCheck = Profession.get(i);
-            if (profession.equals(professionCheck)){
-                Profession.remove(i);
+        if (!profession.equals("Villager")) {
+            for (int i = 0; i < Profession.size(); i++) {
+                String professionCheck = Profession.get(i);
+                if (profession.equals(professionCheck)) {
+                    Profession.remove(i);
+                }
             }
+            setChanged();
+            notifyObservers(Profession.size());
+            System.out.println(badge.getRank());
         }
-        setChanged();
-        notifyObservers(Profession.size());
-        System.out.println(badge.getRank());
     }
 
     public String getUsername() {
