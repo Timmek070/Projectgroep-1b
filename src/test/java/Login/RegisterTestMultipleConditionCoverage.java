@@ -8,15 +8,16 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MCCtest {
+class RegisterTestMultipleConditionCoverage {
+
+    ArrayList<User> users = Database.getInstance().getUsers();
 
     @Test
-    void MCCtest1() {
+    void registerUser1() {
         // 111
 
         Register user1 = new Register();
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // fields are filled in
         assertNotEquals("", user1.getUser().getUsername());
@@ -40,14 +41,12 @@ class MCCtest {
     }
 
     @Test
-    void MCCtest2() {
+    void registerUser2() {
         // 110
 
         Register user1 = new Register();
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
 
-        ArrayList<User> users = Database.getInstance().getUsers();
-
         // fields are filled in
         assertNotEquals("", user1.getUser().getUsername());
         assertNotEquals("", user1.getUser().getPassword());
@@ -70,12 +69,11 @@ class MCCtest {
     }
 
     @Test
-    void MCCtest3() {
+    void registerUser3() {
         // 100
 
         Register user1 = new Register();
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // fields are filled in
         assertNotEquals("", user1.getUser().getUsername());
@@ -99,12 +97,11 @@ class MCCtest {
     }
 
     @Test
-    void MCCtest4() {
+    void registerUser4() {
         // 000
 
         Register user1 = new Register();
         user1.registerUser("","","","","","","");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // fields are not filled in
         assertEquals("", user1.getUser().getUsername());
@@ -129,12 +126,11 @@ class MCCtest {
 
 
     @Test
-    void MCCtest5() {
+    void registerUser5() {
         // 001
 
         Register user1 = new Register();
         user1.registerUser("","","","","","","");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // fields are not filled in
         assertEquals("", user1.getUser().getUsername());
@@ -158,12 +154,11 @@ class MCCtest {
     }
 
     @Test
-    void MCCtest6() {
+    void registerUser7() {
         // 011
 
         Register user1 = new Register();
         user1.registerUser("","","","","","","");
-        ArrayList<User> users = Database.getInstance().getUsers();
 
         // fields are not filled in
         assertEquals("", user1.getUser().getUsername());

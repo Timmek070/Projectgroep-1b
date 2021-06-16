@@ -16,7 +16,7 @@ class RegisterTestDecisionCoverage {
     void registerUser1() {
         Register register = new Register();
         Register register2 = new Register();
-        register.registerUser("antonio","","","","","","");
+        register.registerUser("kadmosb1","keesgerard","kadmosb1","Karel","Ja","Nee","ADMIN");
         register2.registerUser("","","","","","","");
 
         // all fields in registerUser are not filled * 0 *
