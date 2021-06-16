@@ -3,9 +3,13 @@ package Account;
 import controller.ProfessionScreenController;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
-public class User extends Account {
+public class User extends Observable{
 
+    private String Name;
+    private String Sex;
+    private String Dateofbirth;
     private String Username;
     private String Password;
     private String Email;
@@ -14,20 +18,23 @@ public class User extends Account {
     private Communitybadge badge;
 
     public User(String Username, String Password, String Email, String Name, String Sex, String Dateofbirth, String Type) {
-        super(Name, Sex, Dateofbirth);
+        this.Name = Name;
+        this.Sex = Sex;
+        this.Dateofbirth = Dateofbirth;
         this.Username = Username;
         this.Password = Password;
         this.Email = Email;
         this.Type = Type;
         this.Profession=new ArrayList<>();
         Profession.add("Villager");
-        updateBadge();
-
+        this.badge = new Communitybadge(this);
     }
 
     public void addProfession (String profession) {
         Profession.add(profession);
-        updateBadge();
+        setChanged();
+        notifyObservers(Profession.size());
+        System.out.println(badge.getRank());
     }
 
     public void removeProfessionByName (String profession) {
@@ -37,7 +44,9 @@ public class User extends Account {
                 Profession.remove(i);
             }
         }
-        updateBadge();
+        setChanged();
+        notifyObservers(Profession.size());
+        System.out.println(badge.getRank());
     }
 
     public String getUsername() {
@@ -60,22 +69,16 @@ public class User extends Account {
         return this.Profession;
     }
 
-    public void updateBadge() {
-        if (this.getProfession().size() >= 6) {
-            this.badge = new Communitybadge("Gold");
-        }
-        else if (this.getProfession().size() >= 4) {
-            this.badge = new Communitybadge("Silver");
+    public String getName() {
+        return Name;
+    }
 
-        }
-        else if (this.getProfession().size() >= 2) {
-            this.badge = new Communitybadge("Bronze");
+    public String getDateofbirth() {
+        return Dateofbirth;
+    }
 
-        }
-        else {
-            this.badge = new Communitybadge("No badge yet");
-        }
-
+    public String getSex() {
+        return Sex;
     }
 
     public Communitybadge getBadge(){ return badge;}

@@ -1,10 +1,6 @@
 package Webshop;
 
-import Account.Child;
-import Account.Communitybadge;
-import Account.User;
 import Login.Login;
-import javafx.scene.control.Button;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
