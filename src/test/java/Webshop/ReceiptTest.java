@@ -17,17 +17,17 @@ class ReceiptTest {
         Receipt receipt = new Receipt(products);
         System.out.println(Login.getInstance().getIngelogdeUser().getName());
 
-        assertEquals("Naam koper: \n" +
+        assertEquals("Name buyer: \n" +
                 "Admin\n" +
                 "\n" +
-                "Producten: \n" +
+                "Products: \n" +
                 "\n" +
                 "\n" +
-                "Korting percentage: 10.0% \n" +
-                "Korting: €0.0\n" +
+                "Discount percentage: 0.0% \n" +
+                "Discount: €0.0\n" +
                 "\n" +
-                "Prijs excl. korting: €0.0\n" +
-                "Prijs incl. korting: €0.0\n", receipt.getReceipt());
+                "Price excl. discount: €0.0\n" +
+                "Price incl. discount: €0.0\n", receipt.getReceipt());
     }
 
     @Test

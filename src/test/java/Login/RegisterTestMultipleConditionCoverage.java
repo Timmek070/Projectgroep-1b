@@ -20,21 +20,21 @@ class RegisterTestMultipleConditionCoverage {
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
 
         // fields are filled in
-        assertNotEquals("", user1.getUser().getUsername());
-        assertNotEquals("", user1.getUser().getPassword());
-        assertNotEquals("", user1.getUser().getEmail());
-        assertNotEquals("", user1.getUser().getName());
-        assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateOfBirth());
-        assertNotEquals("", user1.getUser().getType());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getUsername());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getPassword());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getEmail());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getName());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getSex());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getDateOfBirth());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getType());
 
         // Passwords match
-        assertEquals("#1Geheim", user1.getUser().getPassword());
+        assertEquals("#1Geheim", Database.getInstance().getUsers().get(3).getPassword());
 
         // username is unique
         for (User user : users) {
-            if (!user1.getUser().getUsername().equals(user.getUsername())) {
-                assertNotEquals(user1.getUser().getUsername(), user.getUsername());
+            if (!Database.getInstance().getUsers().get(3).getUsername().equals(user.getUsername())) {
+                assertNotEquals(Database.getInstance().getUsers().get(3).getUsername(), user.getUsername());
             }
         }
 
@@ -48,21 +48,21 @@ class RegisterTestMultipleConditionCoverage {
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
 
         // fields are filled in
-        assertNotEquals("", user1.getUser().getUsername());
-        assertNotEquals("", user1.getUser().getPassword());
-        assertNotEquals("", user1.getUser().getEmail());
-        assertNotEquals("", user1.getUser().getName());
-        assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateOfBirth());
-        assertNotEquals("", user1.getUser().getType());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getUsername());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getPassword());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getEmail());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getName());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getSex());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getDateOfBirth());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getType());
 
         // Passwords match
-        assertEquals("#1Geheim", user1.getUser().getPassword());
+        assertEquals("#1Geheim", Database.getInstance().getUsers().get(3).getPassword());
 
         // username is not unique
         for (User user : users) {
-            if (user1.getUser().getUsername().equals(user.getUsername())) {
-                assertEquals(user1.getUser().getUsername(), user.getUsername());
+            if (Database.getInstance().getUsers().get(3).getUsername().equals(user.getUsername())) {
+                assertEquals(Database.getInstance().getUsers().get(3).getUsername(), user.getUsername());
             }
         }
 
@@ -75,22 +75,23 @@ class RegisterTestMultipleConditionCoverage {
         Register user1 = new Register();
         user1.registerUser("u1", "#1Geheim", "u1@gmail.com", "u1", "M", "24-12-2000", "Admin");
 
+
         // fields are filled in
-        assertNotEquals("", user1.getUser().getUsername());
-        assertNotEquals("", user1.getUser().getPassword());
-        assertNotEquals("", user1.getUser().getEmail());
-        assertNotEquals("", user1.getUser().getName());
-        assertNotEquals("", user1.getUser().getSex());
-        assertNotEquals("", user1.getUser().getDateOfBirth());
-        assertNotEquals("", user1.getUser().getType());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getUsername());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getPassword());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getEmail());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getName());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getSex());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getDateOfBirth());
+        assertNotEquals("", Database.getInstance().getUsers().get(3).getType());
 
         // Passwords dont match
-        assertNotEquals("wrongPassword", user1.getUser().getPassword());
+        assertNotEquals("wrongPassword", Database.getInstance().getUsers().get(3).getPassword());
 
         // username is not unique
         for (User user : users) {
-            if (user1.getUser().getUsername().equals(user.getUsername())) {
-                assertEquals(user1.getUser().getUsername(), user.getUsername());
+            if (Database.getInstance().getUsers().get(3).getUsername().equals(user.getUsername())) {
+                assertEquals(Database.getInstance().getUsers().get(3).getUsername(), user.getUsername());
             }
         }
 
@@ -104,21 +105,21 @@ class RegisterTestMultipleConditionCoverage {
         user1.registerUser("","","","","","","");
 
         // fields are not filled in
-        assertEquals("", user1.getUser().getUsername());
-        assertEquals("", user1.getUser().getPassword());
-        assertEquals("", user1.getUser().getEmail());
-        assertEquals("", user1.getUser().getName());
-        assertEquals("", user1.getUser().getSex());
-        assertEquals("", user1.getUser().getDateOfBirth());
-        assertEquals("", user1.getUser().getType());
+        assertEquals("", Database.getInstance().getUsers().get(3).getUsername());
+        assertEquals("", Database.getInstance().getUsers().get(3).getPassword());
+        assertEquals("", Database.getInstance().getUsers().get(3).getEmail());
+        assertEquals("", Database.getInstance().getUsers().get(3).getName());
+        assertEquals("", Database.getInstance().getUsers().get(3).getSex());
+        assertEquals("", Database.getInstance().getUsers().get(3).getDateOfBirth());
+        assertEquals("", Database.getInstance().getUsers().get(3).getType());
 
         // Passwords dont match
-        assertNotEquals("wrongPassword", user1.getUser().getPassword());
+        assertNotEquals("wrongPassword", Database.getInstance().getUsers().get(3).getPassword());
 
         // username is not unique
         for (User user : users) {
-            if (user1.getUser().getUsername().equals(user.getUsername())) {
-                assertEquals(user1.getUser().getUsername(), user.getUsername());
+            if (Database.getInstance().getUsers().get(3).getUsername().equals(user.getUsername())) {
+                assertEquals(Database.getInstance().getUsers().get(3).getUsername(), user.getUsername());
             }
         }
 
